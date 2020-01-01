@@ -37,7 +37,17 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <!-- End Google Tag Manager -->
 
     </head>
-
+        <style>
+header
+{
+    margin-top: 0!important;
+}
+header a
+{
+    visibility: visible!important;
+    opacity: 1!important;
+}
+</style>
 
     <body>
         <!-- Google Tag Manager (noscript) -->
@@ -89,7 +99,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 <div class="col-md-2 ">
                     <div class="header-logo-wrap ">
                        
-                <img src="images/logo-header.png" alt=" ">
+                {% comment %} <img src="images/logo-header.png" alt=" "> {% endcomment %}
          
                     </div>
                 </div>
@@ -155,7 +165,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 								<div>
                                     <input type="text" name="mail" placeholder="Ваш email" class="required input-mail">
                                 </div>
-								{% comment %} <div>
+								 {% comment %} <div>
                                     <input type="text" name="town" placeholder="Ваш город" class="required input-town">
                                 </div>
                                  <div class="custom-select input-theme input-product">
@@ -168,11 +178,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                                 </div>
                                 <div>
                                     <input type="text" name="name" placeholder="Планируемый объем закупок" class="input-weight">
-                                </div>
+                                </div> {% endcomment %}
                                 <div>
                                     <textarea name="message" placeholder="Дополнительная информация" class="input-dopinfo"></textarea>
-                                </div> {% endcomment %}
-
+                                </div> 
 
                                 <a href="index.html#" class="btn btn-send">Оставить заявку</a>
                                 <div class="last-info">
