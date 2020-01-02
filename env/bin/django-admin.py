@@ -1,4 +1,4 @@
-#!/home/arch/PandaProduct/env/bin/python3
+#!/home/arch/panda/env/bin/python3
 from django.core import management
 
 if __name__ == "__main__":
