@@ -430,6 +430,7 @@ nav a {
 .section-2 {
     height: 100vh;
     min-height: 600px;
+    /* background-color: #ffffff; */
     background: url(../images/assorty.jpg) center bottom no-repeat;
     background-size: cover;
     background-attachment: fixed;

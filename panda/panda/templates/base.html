@@ -3,7 +3,12 @@
 <!DOCTYPE html>
 <html class="no-js" lang="en">
     <head>
-        <meta charset="utf-8" />
+        {% comment %} <meta charset="utf-8" /> {% endcomment %}
+        <meta http-equiv="content-type" content="text/html" />
+        <meta name="author" content="style" />
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
         <title>
             {% block title %}
                 {% if self.seo_title %}{{ self.seo_title }}{% else %}{{ self.title }}{% endif %}
@@ -14,25 +19,272 @@
                 {% endwith %}
             {% endblock %}
         </title>
+        
         <meta name="description" content="" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
 
         {# Global stylesheets #}
-        <link rel="stylesheet" type="text/css" href="{% static 'css/panda.css' %}">
+        {% comment %} <link rel="stylesheet" type="text/css" href="{% static 'css/panda.css' %}"> {% endcomment %}
+        <link rel="icon" type="image/vnd.microsoft.icon" href="favicon.ico">
+	    <link rel="SHORTCUT ICON" href="favicon.ico">
+        <link href="static/css/bootstrap.css" type="text/css" rel="stylesheet">
+        <link href="static/css/style.css%3F1577363404.css" type="text/css" rel="stylesheet">
+        <link href="static/css/owl.carousel.css" type="text/css" rel="stylesheet">
+        <link href="static/css/owl.theme.default.css" type="text/css" rel="stylesheet">
+        <link href="static/css/animate.css" type="text/css" rel="stylesheet">
+        <link href="static/css/response.css" type="text/css" rel="stylesheet">
 
         {% block extra_css %}
             {# Override this in templates to add extra stylesheets #}
         {% endblock %}
     </head>
+    <style>
+            header {
+                margin-top: 0 !important;
+            }
+
+            header a {
+                visibility: visible !important;
+                opacity: 1 !important;
+            }
+
+            .detail-inner {
+                padding-bottom: 0px;
+                margin-bottom: 0px;
+                margin-top: -50px;
+            }
+
+            .description-wrap {
+                padding-bottom: 50px;
+            }
+
+        </style>
 
     <body class="{% block body_class %}{% endblock %}">
         {% wagtailuserbar %}
+        <div class="hamburger"></div>
+<div class="mobile-menu">
+    <div class="close"></div>
+    <ul>
+        <li><a href="index.html">Главная</a></li>
+        <li><a href="mozzarella/index.html">Сыр</a></li>
+        <li><a href="camembert/index.html">Мясо</a></li>
+        <li><a href="brie/index.html">Рыба</a></li>
+        <li><a href="cottage/index.html">Сделать Заказ</a></li>
+        <li><a href="reklamnaya_produkciya/index.html">Новости</a></li>
+    </ul>
+</div>
+  <header>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-2">
+                    <div class="header-logo-wrap">
+                        <a href="index.html">
+                <img src="static/images/header-arrow.png" alt="">
+            </a>
+                    </div>
+                </div>
+                <div class="col-md-8">
+
+                    <nav class="nav-extra">
+                    <li><a href="index.html">Главная</a></li>
+                        <li><a href="o_kompanii/index.html">О компании</a></li>
+                        <li><a style="cursor: default;">Продукция</a>
+                            <ul>
+                               <li><a href="camembert/index.html">Мясо</a></li>
+                                <li><a href="brie/index.html">Рыба</a></li>
+                                <li><a href="mozzarella/index.html">Сыры</a></li>
+                            </ul>
+
+                        </li>
+                        <li><a href="poleznaya_informaciya.html">Новости</a></li>
+                        <li>
+                            <a href="contact/index.html">Контакты</a></li>
+                    </nav>
+                </div>
+                <div class="col-md-2 ">
+                    <div class="header-logo-wrap ">
+                       
+              
+         
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    
+     <div class="feedback-btn element-btn" data-showEl="1">
+        Заявка на поставку продукции
+    </div>
+    <div class="popup-wrap element-show" data-showEl="1">
+        <div class="table-row">
+            <div>
+                <div>
+                    <div class="close-wrap"></div>
+                    <div class="popup">
+                        <div class="close"></div>
+                        <h3 class="global">Заявка на поставку продукции</h2>
+                            <div class="result"></div>
+                            <form class="form" action="index.html" method="post">
+                                <div>
+                                    <input type="text" name="name" placeholder="Ваше имя" class="input-name">
+                                </div>
+                                <div>
+                                    <input type="text" name="phone" placeholder="Ваш телефон" class="required input-phone">
+                                </div>
+								<div>
+                                    <input type="text" name="mail" placeholder="Ваш email" class="required input-mail">
+                                </div>			
+                                <div>
+                                    <textarea name="message" placeholder="Дополнительная информация" class="input-dopinfo"></textarea>
+                                </div>
+
+
+                                <a href="index.html#" class="btn btn-send">Оставить заявку</a>
+                                <div class="last-info">
+                                    Нажимая кнопку "Оставить заявку", вы соглашаетесь с <a >политикой конфиденциальности</a>.
+                                </div>
+                            </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
         {% block content %}{% endblock %}
+        <footer>
+    <div class="footer-wrap">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-2 col-md-offset-0 col-sm-4">
+                    <nav>
+                        <p class="footer_head">Меню</p>
+                        <ul>
+                            <li><span><a href="index.html">Главная</a></span></li>
+							<li><span><a href="o_kompanii/index.html">О компании</a></span></li>
+                            <li><span><a href="mozzarella/index.html">Сыр</a></span></li>
+                            <li><span><a href="camembert/index.html">Мясо</a></span></li>
+                            <li><span><a href="brie/index.html">Мясо</a></span></li>
+                            <li><span><a href="cottage/index.html">Новости</a></span></li>
+                            {% comment %} <li style="line-height: 0.9;"><span><a href="reklamnaya_produkciya/index.html">Рекламные материалы</a></span></li>
+							<li><span><a href="poleznaya_informaciya.html">Полезные статьи</a></span></li> {% endcomment %}
+                        </ul>
+                    </nav>
+                </div>
+                <div class="col-md-2 col-sm-4 contacts">
+
+                    <p class="footer_head">Контакты</p>
+					<p>
+                        <a href="tel:+79219212296">+7 (921) 921-921-22-96</a>
+                    </p>
+                    <p>
+                        <a href="mailto:sales@alti.pro">
+                            start@PandaProduct
+                        </a>
+                    </p>
+                    <p>
+                        Сыр/Мясо/Рыба:
+                    </p>
+                    
+                    <p>
+                        <a href="files/assortiment_pizza_Alti.pdf" target="_blank">
+                            Скачать презентацию
+                        </a>
+                    </p>
+					{% comment %} <p>
+                        Camembert/Brie:
+                    </p>
+                    <p>
+                        <a href="files/assortiment_brie_camembert_altipro.pdf" target="_blank">
+                            Скачать презентацию
+                        </a>
+                    </p>
+										<p>
+                        <a href="sitemap/index.html">
+                            Карта сайта
+                        </a>
+                    </p> {% endcomment %}
+
+                </div>
+                <div class="col-md-2 col-sm-4 contacts second">
+               
+                    
+                </div>
+            </div>
+            <div class="row footer-row-second">
+                <div class="col-md-2 col-md-offset-2  col-sm-4">
+                    <div class="copyright">
+                        © <span>PandaProduct</span> 2019
+                    </div>
+                </div>
+                <div class="col-md-5  col-sm-4">
+                    {% comment %} <div class="footer-logo">
+                        <img src="images/logo-2.png" alt="" />
+                    </div> {% endcomment %}
+                </div>
+                <div class="col-md-3  col-sm-4">
+                    <style>
+                        .sy-logo {
+                            font-family: arial, sans-serif;
+                            color: #c5c6c9;
+                            margin-top: -8px;
+                        }
+                        
+                        .sy-logo span {
+                            font-size: 11px;
+                            display: inline-block;
+                            vertical-align: middle;
+                            margin: 4px 0;
+                        }
+                        
+                        .sy-logo i {
+                            font-size: 43px;
+                            font-style: normal;
+                            width: 28px;
+                            vertical-align: middle;
+                            display: inline-block;
+                        }
+                        
+                        .sy-logo b {
+                            display: inline-block;
+                            font-family: inherit;
+                            font-weight: bold;
+                        }
+                        
+                        .sy-2 {
+                            line-height: .7;
+                        }
+                        
+                        .sy-logo .sy-3 {
+                            text-align: left;
+                        }
+                        
+                        .sy-logo .sy-2-1 {
+                            position: relative;
+                            left: 6px;
+                        }
+                        
+                        .sy-logo .sy-2-2 {
+                            position: relative;
+                            left: -6px;
+                        }
+
+                    </style>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
 
         {# Global javascript #}
-        <script type="text/javascript" src="{% static 'js/panda.js' %}"></script>
-
+        {% comment %} <script type="text/javascript" src="{% static 'js/panda.js' %}"></script> {% endcomment %}
+        <script src="static/js/jquery-1.9.1.min.js"></script>
+        <script src="static/js/jquery-migrate-1.4.1.js"></script>
+		<!--<script src="/js/jquery.mask.js"></script>-->
+        <script src="static/js/owl.carousel.js"></script>
+        <script src="static/js/wow.js"></script>
+        <script src="static/js/common.js"></script>
         {% block extra_js %}
             {# Override this in templates to add extra javascript #}
         {% endblock %}
