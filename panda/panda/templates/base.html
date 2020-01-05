@@ -27,15 +27,15 @@
         {% comment %} <link rel="stylesheet" type="text/css" href="{% static 'css/panda.css' %}"> {% endcomment %}
         <link rel="icon" type="image/vnd.microsoft.icon" href="favicon.ico">
 	    <link rel="SHORTCUT ICON" href="favicon.ico">
-        <link href="static/css/bootstrap.css" type="text/css" rel="stylesheet">
-        <link href="static/css/style.css%3F1577363404.css" type="text/css" rel="stylesheet">
-        <link href="static/css/owl.carousel.css" type="text/css" rel="stylesheet">
-        <link href="static/css/owl.theme.default.css" type="text/css" rel="stylesheet">
-        <link href="static/css/animate.css" type="text/css" rel="stylesheet">
-        <link href="static/css/response.css" type="text/css" rel="stylesheet">
+        <link href="{% static 'css/bootstrap.css' %}" type="text/css" rel="stylesheet">
+        <link href="{% static 'css/style.css%3F1577363404.css' %}" type="text/css" rel="stylesheet">
+        <link href="{% static 'css/owl.carousel.css' %}" type="text/css" rel="stylesheet">
+        <link href="{% static 'css/owl.theme.default.css' %}" type="text/css" rel="stylesheet">
+        <link href="{% static 'css/animate.css' %}" type="text/css" rel="stylesheet">
+        <link href="{% static 'css/response.css' %}" type="text/css" rel="stylesheet">
 
         {% block extra_css %}
-            {# Override this in templates to add extra stylesheets #}
+        {% comment %} <link href="{% static 'css/style.css%3F1577363408.css' %}" type="text/css" rel="stylesheet"> {% endcomment %}
         {% endblock %}
     </head>
     <style>
@@ -80,7 +80,7 @@
                 <div class="col-md-2">
                     <div class="header-logo-wrap">
                         <a href="index.html">
-                <img src="static/images/header-arrow.png" alt="">
+                <img src="{% static 'images/header-arrow.png' %}" alt="">
             </a>
                     </div>
                 </div>
@@ -279,12 +279,12 @@
 
         {# Global javascript #}
         {% comment %} <script type="text/javascript" src="{% static 'js/panda.js' %}"></script> {% endcomment %}
-        <script src="static/js/jquery-1.9.1.min.js"></script>
-        <script src="static/js/jquery-migrate-1.4.1.js"></script>
+        <script src="{% static 'js/jquery-1.9.1.min.js' %}"></script>
+        <script src="{% static 'js/jquery-migrate-1.4.1.js' %}"></script>
 		<!--<script src="/js/jquery.mask.js"></script>-->
-        <script src="static/js/owl.carousel.js"></script>
-        <script src="static/js/wow.js"></script>
-        <script src="static/js/common.js"></script>
+        <script src="{% static 'js/owl.carousel.js' %}"></script>
+        <script src="{% static 'js/wow.js' %}"></script>
+        <script src="{% static 'js/common.js' %}"></script>
         {% block extra_js %}
             {# Override this in templates to add extra javascript #}
         {% endblock %}

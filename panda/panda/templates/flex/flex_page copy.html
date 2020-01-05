@@ -1,0 +1,260 @@
+{% extends 'base.html' %}
+{% load wagtailcore_tags wagtailimages_tags %}
+{% load static %}
+   
+{% block content %}
+ <div class="top-detail full-height">
+       
+    </div>
+    <div class="content-detail content-camembert">
+        <div class="brie-bg-1"></div>
+        <div class="brie-bg-2"></div>
+        
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-7 col-md-offset-3">
+                    <h1>{{ self.subtitle }}</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-7 col-md-offset-3">
+                    <div class="content-description">
+                   <p>
+                   Настоящий сыр Бри обладает ярким вкусом, в котором отчетливо ощущается сливочная нежность и пикантная остринка. Чем тоньше лепешка сыра, тем отчетливее его острота и многогранный аромат. Хороший сыр Brie всегда покрыт твердой корочкой с бархатистой бело-серой плесенью, а его мякоть текучая, соломенного оттенка. 
+                </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="product-wrap">
+                    <div class="product-item">
+                        <div class="col-md-3 col-sm-3 col-md-offset-3">
+                            <div class="product-info">
+                                <p>
+                                    <b>
+                                     <a href="washer/index.html"> Alti
+                                <br> Brie  (шайба)
+                                <br> 125 г</a>
+                                    </b>
+                                </p>
+                                <a><img class="gold_medal" src="{% static 'images/zolotaya_medal_ugrich.png' %}"></a>
+                            </div>                       
+                        </div>
+                        {% image self.product_image original as img %}
+                        <div class="col-md-5  col-sm-5">
+                            <div class="product-img wow fadeInUp">
+                                 <a href="washer/index.html">  <img src="{{ img.url }}" alt="Сыр Alti Brie(шайба) 125 г"></a>
+                            </div>                             
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="product-wrap">
+                    <div class="product-item">
+                        <div class="col-md-3  col-sm-3 col-md-offset-3">
+                            <div class="product-info">
+                                <p>
+                                    <b>
+                                      <a href="creme/index.html">Alti <br>
+                                Brie creme <br>
+                                de cheese<br>
+                               125 г</a>
+                                    </b>
+                                </p>
+                                <p>
+                                    <span>
+                                        Транспортная <br>
+                                        упаковка: 8 х 125 г
+                                    </span>
+									</p>
+									<a href="../index.html#gold_medal"><img class="gold_medal" src="../images/zolotaya_medal_ugrich.png"></a>
+                            </div>
+                        </div>
+                        <div class="col-md-5  col-sm-5">
+                            <div class="product-img wow fadeInUp">
+                                <a href="creme/index.html"><img src="{% static 'images/cheese-7.png' %}" alt="Сыр Alti Brie creme de cheese 125 г"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="product-wrap">
+                    <div class="product-item">
+                        <div class="col-md-3  col-sm-3 col-md-offset-3">
+                            <div class="product-info">
+                                <p>
+                                   <b>
+                                   <a href="triangle/index.html">Alti
+                                <br> Brie (треугольник)
+                                <br> 125 г</a>
+                                   </b>
+                                </p>
+                                <p>
+                                    <span>
+                                        Транспортная <br>
+                                        упаковка: 8 х 125 г
+                                    </span>
+                                </p>
+								<a href="../index.html#gold_medal"><img class="gold_medal" src="../images/zolotaya_medal_ugrich.png"></a>
+                            </div>
+                        </div>
+                        <div class="col-md-5  col-sm-5">
+                            <div class="product-img wow fadeInUp">
+                                  <a href="triangle/index.html"><img src="{% static 'images/cheese-8.png' %}" alt="Сыр Alti Brie(треугольник) 125 г"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+			<div class="row">
+                <div class="product-wrap">
+                    <div class="product-item">
+                        <div class="col-md-3  col-sm-3 col-md-offset-3">
+                            <div class="product-info">
+                                <p>
+                                   <b>
+                                   <a href="citrus/index.html">Alti
+                                <br> Brie Citrus
+                                <br> 125 г</a>
+                                   </b>
+                                </p>
+                                <p>
+                                    <span>
+                                        Транспортная <br>
+                                        упаковка: 8 х 125 г
+                                    </span>
+                                </p>
+								<a href="../index.html#gold_medal"><img class="gold_medal" src="../images/zolotaya_medal_ugrich.png"></a>
+                            </div>
+                        </div>
+                        <div class="col-md-5  col-sm-5">
+                            <div class="product-img wow fadeInUp">
+                                  <a href="citrus/index.html"><img src="{% static 'images/citrus.png' %}" alt="Сыр Alti Brie Citrus 125 г"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+			<div class="row">
+                <div class="product-wrap">
+                    <div class="product-item">
+                        <div class="col-md-3  col-sm-3 col-md-offset-3">
+                            <div class="product-info">
+                                <p>
+                                   <b>
+                                   <a href="truffle/index.html">Alti
+                                <br> Brie Black Truffle
+                                <br> 125 г</a>
+                                   </b>
+                                </p>
+                                <p>
+                                    <span>
+                                        Транспортная <br>
+                                        упаковка: 8 х 125 г
+                                    </span>
+                                </p>
+								<a href="../index.html#gold_medal"><img class="gold_medal" src="../images/zolotaya_medal_ugrich.png"></a>
+                            </div>
+                        </div>
+                        <div class="col-md-5  col-sm-5">
+                            <div class="product-img wow fadeInUp">
+                                  <a href="truffle/index.html"><img src="../images/truffle.png" alt="Сыр Alti Brie Black Truffle 125 г"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="product-wrap">
+                    <div class="product-item">
+                        <div class="col-md-3  col-sm-3 col-md-offset-3">
+                            <div class="product-info">
+                                <p>
+                                  <b>
+                                  <a href="weight/index.html"> Alti
+                                <br> Brie (весовой)
+                                <br> 1 кг</a>
+                                  </b>
+                                </p>
+                                <p>
+                                    <span>
+                                        Транспортная <br>
+                                        упаковка: 8 х 125 г
+                                    </span>
+                                </p>
+								<a href="../index.html#gold_medal"><img class="gold_medal" src="../images/zolotaya_medal_ugrich.png"></a>
+                            </div>
+                        </div>
+                        <div class="col-md-5  col-sm-5">
+                            <div class="product-img wow fadeInUp">
+                                  <a href="weight/index.html"> <img style="max-width: 600px;" src="../images/cheese-9.png" alt="Сыр Alti Brie (весовой) 1 кг"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="product-wrap">
+                    <div class="product-item">
+                        <div class="col-md-3  col-sm-3 col-md-offset-3">
+                            <div class="product-info">
+                                <p>
+                                  <b>
+                                  <a href="snack/index.html">Alti
+                                <br> Cheese Snack Brie 
+                                <br> 180 г</a>
+                                  </b>
+                                </p>
+                                <p>
+                                    <span>
+                                        Транспортная <br>
+                                        упаковка: 8 х 125 г
+                                    </span>
+                                </p>
+								<a href="../index.html#gold_medal"><img class="gold_medal" src="../images/zolotaya_medal_ugrich.png"></a>
+                            </div>
+                        </div>
+                        <div class="col-md-5  col-sm-5">
+                            <div class="product-img wow fadeInUp">
+                                 <a href="snack/index.html"> <img style="max-width: 600px;" src="../images/cheese-10.png" alt="Сыр Alti Cheese Snack Brie 180 г"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+			<div class="row">
+                <div class="product-wrap">
+                    <div class="product-item">
+                        <div class="col-md-3  col-sm-3 col-md-offset-3">
+                            <div class="product-info">
+                                <p>
+                                  <b>
+                                  <a href="snack_paprika/index.html">Alti Brie
+                                <br>Snack Paprika&Tomato 
+                                <br> 180 г</a>
+                                  </b>
+                                </p>
+                                <p>
+                                    <span>
+                                        Транспортная <br>
+                                        упаковка: 8 х 125 г
+                                    </span>
+                                </p>
+								<a href="../index.html#gold_medal"><img class="gold_medal" src="../images/zolotaya_medal_ugrich.png"></a>
+                            </div>
+                        </div>
+                        <div class="col-md-5  col-sm-5">
+                            <div class="product-img wow fadeInUp">
+                                 <a href="snack_paprika/index.html"> <img style="max-width: 460px;" src="../images/sb_snack_paprika.png" alt="Сыр Alti Brie Snack Paprika&Tomato 180 г"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="paraxify-brie">
+
+{% endblock %}
