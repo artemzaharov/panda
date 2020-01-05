@@ -757,7 +757,7 @@ footer .copyright span {
 h1 {
     font-size: 148px;
     font-family: gelato;
-    color: #abe1fa;
+    color: #000000;
     margin: 20px 20px -15px -30px;
 }
 
@@ -792,7 +792,7 @@ h1 {
 
 .product-item {
     font-size: 20px;
-    color: #005596;
+    color: #000000;
     margin: 0 0 60px;
 }
 
@@ -828,7 +828,9 @@ h1 {
 
 .brie-bg-1 
 {
+    position: reletive;
     background: url(../images/bg-half-1.jpg) center top repeat-y;
+    
 }
 .brie-bg-2
 {
@@ -865,9 +867,9 @@ h1 {
 }
 .paraxify-brie
 {
-    height: 450px;
-
-    background:  url(../images/bg-5.jpg);
+    height: 225px;
+    
+    background:  url(../images/bg-h.jpg);
     background-size: cover;
     background-attachment: fixed;
     background-position: center 0px;

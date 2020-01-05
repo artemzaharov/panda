@@ -3,8 +3,31 @@
 {% load static %}
    
 {% block content %}
-
+<div class="top-detail full-height">
+        </div>
+        <div class="content-detail content-camembert">
+        <div class="brie-bg-1"></div>
+        {% comment %} <div class="brie-bg-2"></div> {% endcomment %}
+            <div class="row">
+                <div class="col-md-7 col-md-offset-3">
+                    <h1>{{ self.subtitle}}</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-7 col-md-offset-3">
+                    <div class="content-description">
+                   <p>
+                        {{ self.info }}
+                </p>
+                    </div>
+                </div>
+            </div>
 {% for block in page.content %}
     {% include_block block %}
 {% endfor %}
+
+   </div>
+    </div>
+    <div class="paraxify-brie">
+
 {% endblock %}

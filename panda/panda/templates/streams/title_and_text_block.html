@@ -1,23 +1,5 @@
-        <div class="top-detail full-height">
-       
-    </div>
-    <div class="content-detail content-camembert">
+        {% load wagtailcore_tags wagtailimages_tags %}
         <div class="brie-bg-1"></div>
-        <div class="brie-bg-2"></div>
-            <div class="row">
-                <div class="col-md-7 col-md-offset-3">
-                    <h1>{{ self.title}}</h1>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-7 col-md-offset-3">
-                    <div class="content-description">
-                   <p>
-                        {{ self.text }}
-                </p>
-                    </div>
-                </div>
-            </div>
             <div class="row">
                 <div class="product-wrap">
                     <div class="product-item">
@@ -25,23 +7,25 @@
                             <div class="product-info">
                                 <p>
                                   <b>
-                                  <a href="snack_paprika/index.html">Alti Brie
-                                <br>Snack Paprika&Tomato 
-                                <br> 180 г</a>
+                                  <a href="snack_paprika/index.html">{{ self.name }}
+                                
+                                <br>Вес: {{ self.weight }}</a>
                                   </b>
                                 </p>
                                 <p>
                                     <span>
-                                        Транспортная <br>
-                                        упаковка: 8 х 125 г
+                                       Цена: {{ self.price }} <br>
+                                        
+                                        
                                     </span>
                                 </p>
-								<a href="../index.html#gold_medal"><img class="gold_medal" src="../images/zolotaya_medal_ugrich.png"></a>
+                                {% image self.photo original as img1 %}
+								{% comment %} <a href="../index.html#gold_medal"><img class="gold_medal" src="{{ img1.url }}"></a> {% endcomment %}
                             </div>
                         </div>
                         <div class="col-md-5  col-sm-5">
                             <div class="product-img wow fadeInUp">
-                                 <a href="snack_paprika/index.html"> <img style="max-width: 460px;" src="../images/sb_snack_paprika.png" alt="Сыр Alti Brie Snack Paprika&Tomato 180 г"></a>
+                                 <a href="snack_paprika/index.html"> <img style="max-width: 460px;" src="{{ img1.url }}" alt="Сыр Alti Brie Snack Paprika&Tomato 180 г"></a>
                             </div>
                         </div>
                     </div>
@@ -49,4 +33,3 @@
             </div>
         </div>
     </div>
-    <div class="paraxify-brie">
