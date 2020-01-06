@@ -71,7 +71,7 @@
         <li><a href="{{ page.get_parent.url }}">Главная</a></li>
         <li><a href="{% slugurl 'meat' %}">Сыр</a></li>
         <li><a href="{% slugurl 'cheese' %}">Мясо</a></li>
-        <li><a href="brie/index.html">Рыба</a></li>
+        <li><a href="{% slugurl 'fish' %}">Рыба</a></li>
         <li><a href="cottage/index.html">Сделать Заказ</a></li>
         <li><a href="reklamnaya_produkciya/index.html">Новости</a></li>
     </ul>
@@ -94,7 +94,7 @@
                         <li><a style="cursor: default;">Продукция</a>
                             <ul>
                                <li><a href="{% slugurl 'meat' %}">Мясо</a></li>
-                                <li><a href="brie/index.html">Рыба</a></li>
+                                <li><a href="{% slugurl 'fish' %}">Рыба</a></li>
                                 <li><a href="{% slugurl 'cheese' %}">Сыры</a></li>
                             </ul>
 
