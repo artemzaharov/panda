@@ -20,7 +20,7 @@ class HomePage(Page):
     )
 
     #some link to another page
-    some_link = models.ForeignKey(
+    some_link_meat = models.ForeignKey(
         'wagtailcore.Page',
         null=True,
         blank=True,
@@ -28,10 +28,16 @@ class HomePage(Page):
         related_name="+"
 
     )
-
+    some_link_cheese = models.ForeignKey(
+        'wagtailcore.Page',
+        null=True,
+        blank=True,
+        on_delete=models.SET_NULL,
+        related_name="+"
+    )
     content_panels = Page.content_panels + [
         FieldPanel('company_info'),
         ImageChooserPanel('some_image'),
-        PageChooserPanel('some_link')
-        
+        PageChooserPanel('some_link_meat'),
+        PageChooserPanel('some_link_cheese'),
     ]

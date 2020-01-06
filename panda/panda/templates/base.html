@@ -1,4 +1,6 @@
 {% load static wagtailuserbar %}
+{% load wagtailcore_tags %}
+
 
 <!DOCTYPE html>
 <html class="no-js" lang="en">
@@ -66,9 +68,9 @@
 <div class="mobile-menu">
     <div class="close"></div>
     <ul>
-        <li><a href="index.html">Главная</a></li>
-        <li><a href="mozzarella/index.html">Сыр</a></li>
-        <li><a href="{{ self.some_link.url }}">Мясо</a></li>
+        <li><a href="{{ page.get_parent.url }}">Главная</a></li>
+        <li><a href="{% slugurl 'meat' %}">Сыр</a></li>
+        <li><a href="{% slugurl 'cheese' %}">Мясо</a></li>
         <li><a href="brie/index.html">Рыба</a></li>
         <li><a href="cottage/index.html">Сделать Заказ</a></li>
         <li><a href="reklamnaya_produkciya/index.html">Новости</a></li>
@@ -87,13 +89,13 @@
                 <div class="col-md-8">
 
                     <nav class="nav-extra">
-                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="{{ page.get_parent.url }}">Главная</a></li>
                         <li><a href="o_kompanii/index.html">О компании</a></li>
                         <li><a style="cursor: default;">Продукция</a>
                             <ul>
-                               <li><a href="{{ self.some_link.url }}">Мясо</a></li>
+                               <li><a href="{% slugurl 'meat' %}">Мясо</a></li>
                                 <li><a href="brie/index.html">Рыба</a></li>
-                                <li><a href="mozzarella/index.html">Сыры</a></li>
+                                <li><a href="{% slugurl 'cheese' %}">Сыры</a></li>
                             </ul>
 
                         </li>
