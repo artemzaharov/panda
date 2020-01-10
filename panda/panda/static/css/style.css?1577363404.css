@@ -92,7 +92,7 @@ h3,
 h4,
 h5,
 th {
-    font-weight: normal;
+    font-weight: 600;
     /*font-family: 'CharterC-Bold';*/
 	font-family: 'Pt';
     vertical-align: initial;
@@ -428,8 +428,8 @@ nav a {
 /*----section-2-----*/
 
 .section-2 {
-    height: 100vh;
-    min-height: 600px;
+    height: 80vh;
+    min-height: 500px;
     /* background-color: #ffffff; */
     background: url(../images/assorty.jpg) center bottom no-repeat;
     background-size: cover;
@@ -1494,7 +1494,7 @@ header nav li {
 
 .nav-extra {
 
-    margin-top: 23px;
+    margin-top: 20px;
 }
 
 .nav-extra li ul {

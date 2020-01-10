@@ -1,35 +1,37 @@
-        {% load wagtailcore_tags wagtailimages_tags %}
-        <div class="brie-bg-1"></div>
-            <div class="row">
-                <div class="product-wrap">
-                    <div class="product-item">
-                        <div class="col-md-3  col-sm-3 col-md-offset-3">
-                            <div class="product-info">
-                                <p>
-                                  <b>
-                                  <a href="snack_paprika/index.html">{{ self.name }}
-                                
+{% load wagtailcore_tags wagtailimages_tags %}
+<div class="brie-bg-1"></div>
+<div class="row">
+    <div class="product-wrap">
+        <div class="product-item">
+            <div class="col-md-3  col-sm-3 col-md-offset-3">
+                <div class="product-info">
+                    <p>
+                        <b>
+                            <a href="snack_paprika/index.html">{{ self.name }}
+
                                 <br>Вес: {{ self.weight }}</a>
-                                  </b>
-                                </p>
-                                <p>
-                                    <span>
-                                       Цена: {{ self.price }} <br>
-                                        
-                                        
-                                    </span>
-                                </p>
-                                {% image self.photo original as img1 %}
-								{% comment %} <a href="../index.html#gold_medal"><img class="gold_medal" src="{{ img1.url }}"></a> {% endcomment %}
-                            </div>
-                        </div>
-                        <div class="col-md-5  col-sm-5">
-                            <div class="product-img wow fadeInUp">
-                                 <a href="snack_paprika/index.html"> <img style="max-width: 460px;" src="{{ img1.url }}" alt="Сыр Alti Brie Snack Paprika&Tomato 180 г"></a>
-                            </div>
-                        </div>
-                    </div>
+                        </b>
+                    </p>
+                    <p>
+                        <span>
+                            Цена: {{ self.price }} <br>
+
+
+                        </span>
+                    </p>
+                    {% image self.photo original as img1 %}
+                    {% comment %} <a href="../index.html#gold_medal"><img class="gold_medal" src="{{ img1.url }}"></a>
+                    {% endcomment %}
+                </div>
+            </div>
+            <div class="col-md-5  col-sm-5">
+                <div class="product-img wow fadeInUp">
+                    <a href="snack_paprika/index.html"> <img style="max-width: 460px;" src="{{ img1.url }}"
+                            alt="Сыр Alti Brie Snack Paprika&Tomato 180 г"></a>
                 </div>
             </div>
         </div>
     </div>
+</div>
+</div>
+</div> 

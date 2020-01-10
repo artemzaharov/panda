@@ -13,13 +13,6 @@ class FlexPage(Page):
 
     subtitle = models.CharField(max_length=100, null=True, blank=True)
     info = models.TextField(max_length=1000, null=True, blank=True)
-    # product_image = models.ForeignKey(
-    #     "wagtailimages.Image",
-    #     null=True,
-    #     blank=False,
-    #     on_delete=models.SET_NULL,
-    #     related_name='+'
-    # )
 
     content = StreamField(
         [
