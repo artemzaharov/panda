@@ -72,11 +72,11 @@
         <div class="close"></div>
         <ul>
             <li><a href="/">Главная</a></li>
-            <li><a href="{% slugurl 'meat' %}">Сыр</a></li>
+            <li><a href="{% slugurl 'cheese' %}">Сыр</a></li>
             <li><a href="{% slugurl 'cheese' %}">Мясо</a></li>
-            <li><a href="{% slugurl 'fish' %}">Рыба</a></li>
-            <li><a href="cottage/index.html">Сделать Заказ</a></li>
-            <li><a href="reklamnaya_produkciya/index.html">Новости</a></li>
+            <li><a href="{% slugurl 'cheese' %}">Рыба</a></li>
+            <li><a href="/">Сделать Заказ</a></li>
+            <li><a href="{% slugurl 'katalog' %}">Каталог</a></li>
         </ul>
     </div>
     <header>
@@ -94,18 +94,18 @@
                     <nav class="nav-extra">
                         <li><a href="/">Главная</a></li>
                         {% comment %} <li><a href="{{ page.get_parent.url }}">Главная</a></li> {% endcomment %}
-                        <li><a href="o_kompanii/index.html">О компании</a></li>
+                        <li><a href="{% slugurl 'about' %}">О компании</a></li>
                         <li><a style="cursor: default;">Продукция</a>
                             <ul>
-                                <li><a href="{% slugurl 'meat' %}">Мясо</a></li>
-                                <li><a href="{% slugurl 'fish' %}">Рыба</a></li>
+                                <li><a href="{% slugurl 'cheese' %}">Мясо</a></li>
+                                <li><a href="{% slugurl 'cheese' %}">Рыба</a></li>
                                 <li><a href="{% slugurl 'cheese' %}">Сыры</a></li>
                             </ul>
 
                         </li>
-                        <li><a href="poleznaya_informaciya.html">Новости</a></li>
+                        <li><a href="{% slugurl 'katalog' %}">Каталог</a></li>
                         <li>
-                            <a href="contact/index.html">Контакты</a></li>
+                            <a href="{% slugurl 'contacts' %}">Контакты</a></li>
                     </nav>
                 </div>
                 <div class="col-md-2 ">
@@ -171,12 +171,12 @@
                         <nav>
                             <p class="footer_head">Меню</p>
                             <ul>
-                                <li><span><a href="index.html">Главная</a></span></li>
+                                <li><span><a href="/">Главная</a></span></li>
                                 <li><span><a href="o_kompanii/index.html">О компании</a></span></li>
-                                <li><span><a href="mozzarella/index.html">Сыр</a></span></li>
-                                <li><span><a href="camembert/index.html">Мясо</a></span></li>
-                                <li><span><a href="brie/index.html">Мясо</a></span></li>
-                                <li><span><a href="cottage/index.html">Новости</a></span></li>
+                                <li><span><a href="{% slugurl 'cheese' %}">Сыр</a></span></li>
+                                <li><span><a href="{% slugurl 'cheese' %}">Мясо</a></span></li>
+                                <li><span><a href="{% slugurl 'cheese' %}">Мясо</a></span></li>
+                                <li><span><a href="{% slugurl 'cheese' %}">Новости</a></span></li>
                                 {% comment %} <li style="line-height: 0.9;"><span><a
                                             href="reklamnaya_produkciya/index.html">Рекламные материалы</a></span></li>
                                 <li><span><a href="poleznaya_informaciya.html">Полезные статьи</a></span></li>
@@ -186,7 +186,7 @@
                     </div>
                     <div class="col-md-2 col-sm-4 contacts">
 
-                        <p class="footer_head">Контакты</p>
+                        <p class="{% slugurl 'contacts' %}">Контакты</p>
                         <p>
                             <a href="tel:+79219212296">+7 (921) 921-921-22-96</a>
                         </p>
@@ -200,7 +200,7 @@
                         </p>
 
                         <p>
-                            <a href="files/assortiment_pizza_Alti.pdf" target="_blank">
+                            <a href="/documents/1/.pdf" target="_blank">
                                 Скачать презентацию
                             </a>
                         </p>

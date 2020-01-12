@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+{% load wagtailcore_tags wagtailimages_tags %}
+{% load static %}
+
+{% block content %}
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-8 col-md-offset-2">
+            <div class="detail-inner">
+                <div class="top-section-detail show">
+                    <div class="wrap-mini">
+                        <h1>{{ self.subtitle }}</h1>
+                        <div class="description-wrap">
+                            <div class="description">
+                                <p>{{ self.info }}</p>
+                                <p>{{ self.mail }}</p>
+                                <p>{{ self.adress }}</p>
+                                <br>
+                                <br>
+                                <br>
+                                <br>
+                                <br>
+                                <br>
+                                <br>
+                                <br>
+                                <br>
+                                <br>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+
+<div class="paraxify-brie">
+    {% endblock %}
