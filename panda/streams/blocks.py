@@ -13,8 +13,11 @@ class CardBlock(blocks.StructBlock):
           label = 'Продукты'
 
 
-class RichTextBlock(blocks.RichTextBlock):
+class RichTextBlock(blocks.StructBlock):
 
+    
+    photo = ImageChooserBlock(required=False)
+    
     class Meta: #noqa
         template = 'streams/richtext_block.html'
         icon = 'edit'

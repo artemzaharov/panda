@@ -92,7 +92,7 @@ h3,
 h4,
 h5,
 th {
-    font-weight: 600;
+    font-weight: normal;
     /*font-family: 'CharterC-Bold';*/
 	font-family: 'Pt';
     vertical-align: initial;
@@ -758,7 +758,7 @@ h1 {
     font-size: 148px;
     font-family: gelato;
     color: #000000;
-    margin: 20px 20px -15px -30px;
+    margin: 50px 20px -15px -30px;
 }
 
 .content-detail {
@@ -981,7 +981,7 @@ h1 {
 }
 
 .description h2 {
-    color: #005596;
+    color: #1e972c;
     font-size: 24px;
     padding-bottom: 10px;
 }
@@ -1849,3 +1849,19 @@ textarea::placeholder {}
   font-size: 14px;
   text-transform: uppercase;
 }
+
+a.button7 {
+    font-weight: 700;
+    color: white;
+    text-decoration: none;
+    padding: .8em 1em calc(.8em + 3px);
+    border-radius: 3px;
+    background: rgb(72, 75, 73);
+    box-shadow: 0 -3px rgb(118, 124, 121) inset;
+    transition: 0.2s;
+  } 
+  a.button7:hover { background: rgb(53, 167, 110); }
+  a.button7:active {
+    background: rgb(33,147,90);
+    box-shadow: 0 3px rgb(33,147,90) inset;
+  }

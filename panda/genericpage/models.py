@@ -10,9 +10,10 @@ from streams import blocks
 class GenericPage(Page):
 
     template = "generic/generic_page.html"
-
-    subtitle = models.CharField(max_length=100, null=True, blank=True)
-
+    
+    package = models.CharField(max_length=100, null=True, blank=True)
+    info = models.TextField(max_length=1000, null=True, blank=True)
+    name = models.TextField(max_length=1000, null=True, blank=True)
     content = StreamField(
          [
             # ("title_and_text", blocks.TitleAndTextBlock()),
@@ -23,11 +24,13 @@ class GenericPage(Page):
     )
 
     content_panels = Page.content_panels + [
-        FieldPanel('subtitle'),
+        FieldPanel('name'),
+        FieldPanel('package'),
+        FieldPanel('info'),
         StreamFieldPanel('content'),
     ]
 
     class Meta: #noqa
-        verbose_name = 'Generic Page'
-        verbose_name_plural = "Generic Pages"
+        verbose_name = 'Спецификация Товара'
+        verbose_name_plural = "Спецификация Товара"
 

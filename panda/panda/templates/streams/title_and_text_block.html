@@ -9,16 +9,15 @@
                         <b>
                             <a href="snack_paprika/index.html">{{ self.name }}
 
-                                <br>Вес: {{ self.weight }}</a>
+                                <br> {{ self.weight }}</a>
                         </b>
                     </p>
-                    <p>
+                  
                         <span>
-                            Цена: {{ self.price }} <br>
 
-
+                       {{ self.price }}
                         </span>
-                    </p>
+                
                     {% image self.photo original as img1 %}
                     {% comment %} <a href="../index.html#gold_medal"><img class="gold_medal" src="{{ img1.url }}"></a>
                     {% endcomment %}
@@ -26,7 +25,7 @@
             </div>
             <div class="col-md-5  col-sm-5">
                 <div class="product-img wow fadeInUp">
-                    <a href="snack_paprika/index.html"> <img style="max-width: 460px;" src="{{ img1.url }}"
+                    <a href="/cheese/altimilkextra/"> <img style="max-width: 460px;" src="{{ img1.url }}"
                             alt="Сыр Alti Brie Snack Paprika&Tomato 180 г"></a>
                 </div>
             </div>
@@ -34,4 +33,4 @@
     </div>
 </div>
 </div>
-</div> 
+</div>

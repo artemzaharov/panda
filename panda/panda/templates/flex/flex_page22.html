@@ -1,0 +1,49 @@
+
+    {% extends 'base.html' %}
+{% load wagtailcore_tags wagtailimages_tags %}
+{% load static %}
+
+{% block content %}
+    <div class="content-detail content-camembert">
+        <div class="brie-bg-1"></div>
+        <div class="brie-bg-2"></div>
+        
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-7 col-md-offset-3">
+                    <h1>Brie</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-7 col-md-offset-3">
+                    <div class="content-description">
+                   <p>
+                   Настоящий сыр Бри обладает ярким вкусом, в котором отчетливо ощущается сливочная нежность и пикантная остринка. Чем тоньше лепешка сыра, тем отчетливее его острота и многогранный аромат. Хороший сыр Brie всегда покрыт твердой корочкой с бархатистой бело-серой плесенью, а его мякоть текучая, соломенного оттенка. 
+                </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="product-wrap">
+                    <div class="product-item">
+                        <div class="col-md-3 col-sm-3 col-md-offset-3">
+                            <div class="product-info">
+                                <p>
+                                    <b>
+                                     <a href="washer/index.html"> Alti
+                                <br> Brie  (шайба)
+                                <br> 125 г</a>
+                                    </b>
+                                </p>
+                                <a href="../index.html#gold_medal"><img class="gold_medal" src="../images/zolotaya_medal_ugrich.png"></a>
+                            </div>
+                        </div>
+                        <div class="col-md-5  col-sm-5">
+                            <div class="product-img wow fadeInUp">
+                                 <a href="washer/index.html">  <img src="../images/cheese-6.png" alt="Сыр Alti Brie(шайба) 125 г"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                {% endblock %}
