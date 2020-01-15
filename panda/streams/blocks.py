@@ -1,11 +1,13 @@
 from wagtail.images.blocks import ImageChooserBlock
 from wagtail.core import blocks
 
-class CardBlock(blocks.StructBlock):
+class CardBlock(blocks.StructBlock):#каталог продукции
 
-    name = blocks.CharBlock()
-    weight = blocks.CharBlock()
+    name = blocks.CharBlock(required=False)
+    weight = blocks.CharBlock(required=False)
     photo = ImageChooserBlock(required=False)
+ 
+    urlpage = blocks.PageChooserBlock(required=False)
     price = blocks.RichTextBlock()
     class Meta:
           template = 'streams/title_and_text_block.html'

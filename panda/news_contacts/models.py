@@ -14,7 +14,7 @@ class NewsContacts(Page):
     info = models.TextField(max_length=1000, null=True, blank=True)
     mail = models.CharField(max_length=100, null=True, blank=True)
     adress = models.CharField(max_length=100, null=True, blank=True)
-
+    
     
     content_panels = Page.content_panels + [
         FieldPanel("subtitle"),

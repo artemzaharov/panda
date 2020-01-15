@@ -1,0 +1,29 @@
+
+
+.wrapper {
+  position: absolute;
+  top: 50%;
+  width: 90%;
+  left: 5%;
+  margin-top: -87.5px;
+  font-size: 30px;
+  height: 175px;
+}
+
+.wave {
+  color: #443e3e;
+  -webkit-animation: 0.5s color infinite;
+          animation: 0.5s color infinite;
+}
+
+@-webkit-keyframes color {
+  50% {
+    color: #656b68;
+  }
+}
+
+@keyframes color {
+  50% {
+    color: #454e4a;
+  }
+}

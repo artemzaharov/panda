@@ -132,16 +132,24 @@ a:hover {
 }
 
 body {
-    background: #fff;
+    background: #ebdaca;
     color: #000;
     line-height: 1.4;
-    font-size: 14px;
+    font-size: 18px;
     /*font-family: 'CharterC-Bold';*/
 	font-family: 'Pt';
     overflow-x: hidden;
     max-width: 1920px;
     margin: 0 auto;
     position: relative;
+}
+.top-section-detail-inner
+{
+    background: #ebdaca;
+}
+.top-section-detail
+{
+    background: #ebdaca;
 }
 .container-fluid
 {
@@ -452,6 +460,7 @@ nav a {
     
     max-width: 430px;
     margin: 0 auto;
+
 	
 	font-family: 'CharterC';
 }
@@ -631,10 +640,10 @@ nav a {
 
 footer {
     background: rgba(63, 67, 73, 0.71);
-    color: #fff;
+    color: rgb(0, 0, 0);
     position: absolute;
     width: 100%;
-    bottom: 0;
+    bottom: 1;
     z-index: 3;
 }
 footer .contacts a
@@ -650,7 +659,7 @@ footer .contacts.second h2
     border-top: 0px solid #1d1d1f;
     padding-top: 15px;
     padding-bottom: 5px;
-    background-color:rgba(63, 67, 73, 0.71);
+    background-color:white;
 }
 
 footer h2 {
@@ -663,7 +672,7 @@ footer h2 {
 
 footer .copyright {
     font-family: plumb;
-    color: #d0bf7f;
+    color: #114116;
     position: relative;
 }
 
@@ -721,7 +730,7 @@ footer .copyright span {
 
 .top-detail {
     height: 10px;
-    background: #ffffff;
+    background: #ebdaca;
     position: relative;
 }
 .top-detail .blue-box
@@ -755,15 +764,15 @@ footer .copyright span {
 }
 
 h1 {
-    font-size: 148px;
+    font-size: 100px;
     font-family: gelato;
     color: #000000;
-    margin: 50px 20px -15px -30px;
+    margin: 70px 20px -15px -30px;
 }
 
 .content-detail {
     min-height: 400px;
-    background: #fff;
+    background: #ebdaca;
     position: relative;
     padding-bottom: 40px;
     overflow: hidden;
@@ -1011,13 +1020,13 @@ h1 {
     transform: translateX(0px);
 }
 .detail-inner-about {
-    border-top: 2px solid #b8ad89;
-    background: #fff;
+    border-top: 2px solid #000000;
+    background: #ebdaca;
     position: relative;
-    color: #b8ad89;
+    color: #000000;
     margin: 30px 0;
     padding: 0 0 30px;
-    border-bottom: 2px solid #b8ad89;
+    border-bottom: 2px solid #000000;
 }
 
 .detail-inner-about h2 {
@@ -1058,7 +1067,7 @@ h1 {
 }
 
 .detail-all-wrap {
-    background: #fff;
+    background: #ebdaca;
     font-size: 18px;
     
     margin: 0 0 60px;
@@ -1101,7 +1110,7 @@ h1 {
 }
 .null
 {
-    outline: 1px solid #fff;
+    outline: 1px solid #bcb388;
     margin-left: 1px;
 }
 .circlesix
@@ -1323,6 +1332,7 @@ ul.prod_ul { margin: 5px 0 25px 30px; }
  }
  .description-wrap
  {
+    background: #ebdaca;
     padding-bottom: 240px;
  }
  .head-wrap
@@ -1535,7 +1545,7 @@ header nav li a {
 }
 
 header nav li a:hover {
-    color: #abe1fa;
+    color: #24682c;
 }
 
 /*--fields--*/
@@ -1865,3 +1875,10 @@ a.button7 {
     background: rgb(33,147,90);
     box-shadow: 0 3px rgb(33,147,90) inset;
   }
+
+
+
+ 
+
+
+

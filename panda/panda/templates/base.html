@@ -34,11 +34,12 @@
     <link rel="SHORTCUT ICON" href="favicon.ico">
     <link href="{% static 'css/bootstrap.css' %}" type="text/css" rel="stylesheet">
     <link href="{% static 'css/style.css%3F1577363404.css' %}" type="text/css" rel="stylesheet">
+     <link href="{% static 'css/style1.css' %}" type="text/css" rel="stylesheet">
     <link href="{% static 'css/owl.carousel.css' %}" type="text/css" rel="stylesheet">
     <link href="{% static 'css/owl.theme.default.css' %}" type="text/css" rel="stylesheet">
     <link href="{% static 'css/animate.css' %}" type="text/css" rel="stylesheet">
     <link href="{% static 'css/response.css' %}" type="text/css" rel="stylesheet">
-
+ 
     {% block extra_css %}
     {% comment %}
     <link href="{% static 'css/style.css%3F1577363408.css' %}" type="text/css" rel="stylesheet"> {% endcomment %}
@@ -103,13 +104,13 @@
                             </ul>
 
                         </li>
-                        <li><a href="{% slugurl 'katalog' %}">Каталог</a></li>
+                        {% comment %} <li><a href="{% slugurl 'katalog' %}">Каталог</a></li> {% endcomment %}
                         <li>
                             <a href="{% slugurl 'contacts' %}">Контакты</a></li>
                     </nav>
                 </div>
-                <div class="col-md-2 ">
-                    <div class="header-logo-wrap ">
+                {% comment %} <div class="col-md-2 ">
+                    <div class="header-logo-wrap "> {% endcomment %}
 
 
 
@@ -162,142 +163,89 @@
     </div>
 
     {% block content %}{% endblock %}
-    <div class="paraxify-brie">#всталяем где нужен футер!!!!!!!!!!!!!!!!!
-    <footer>
-        <div class="footer-wrap">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-md-2 col-md-offset-0 col-sm-4">
-                        <nav>
-                            <p class="footer_head">Меню</p>
-                            <ul>
-                                <li><span><a href="/">Главная</a></span></li>
-                                <li><span><a href="o_kompanii/index.html">О компании</a></span></li>
-                                <li><span><a href="{% slugurl 'cheese' %}">Сыр</a></span></li>
-                                <li><span><a href="{% slugurl 'cheese' %}">Мясо</a></span></li>
-                                <li><span><a href="{% slugurl 'cheese' %}">Мясо</a></span></li>
-                                <li><span><a href="{% slugurl 'cheese' %}">Новости</a></span></li>
-                                {% comment %} <li style="line-height: 0.9;"><span><a
-                                            href="reklamnaya_produkciya/index.html">Рекламные материалы</a></span></li>
-                                <li><span><a href="poleznaya_informaciya.html">Полезные статьи</a></span></li>
-                                {% endcomment %}
-                            </ul>
-                        </nav>
-                    </div>
-                    <div class="col-md-2 col-sm-4 contacts">
+   
+   
+   
+  
+    {% comment %} <div class="paraxify-brie">#всталяем где нужен футер!!!!!!!!!!!!!!!!! {% endcomment %}
+        <footer>
+            <div class="footer-wrap">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-2 col-md-offset-0 col-sm-4">
 
-                        <p class="{% slugurl 'contacts' %}">Контакты</p>
-                        <p>
-                            <a href="tel:+79219212296">+7 (921) 921-921-22-96</a>
-                        </p>
-                        <p>
-                            <a href="mailto:sales@alti.pro">
-                                start@PandaProduct
-                            </a>
-                        </p>
-                        <p>
-                            Сыр/Мясо/Рыба:
-                        </p>
+                            <nav>
+                                {% comment %} <p class="footer_head">Меню</p> {% endcomment %}
+                                <img align="top" src="https://media.tenor.com/images/37e9e71c2ef4009c6bc1026253b42c3f/tenor.gif" width="200" height="150"   alt="альтернативный текст"
+                               
+                            </nav>
+                        </div>
+                        <div class="col-md-push-8 col-sm-1 contacts">
+                        </br>
+                         </br>
+                           <p>
+                                <a href="/documents/1/.pdf" target="_blank">
+                                <img align="bottom" src="https://msksmol.ru/siemens/img/pdf.png" width="90" height="90"   alt="альтернативный текст">
+                                    Скачать Каталог
 
-                        <p>
-                            <a href="/documents/1/.pdf" target="_blank">
-                                Скачать презентацию
-                            </a>
-                        </p>
-                        {% comment %} <p>
-                            Camembert/Brie:
-                        </p>
-                        <p>
-                            <a href="files/assortiment_brie_camembert_altipro.pdf" target="_blank">
-                                Скачать презентацию
-                            </a>
-                        </p>
-                        <p>
-                            <a href="sitemap/index.html">
-                                Карта сайта
-                            </a>
-                        </p> {% endcomment %}
+                                </a>
+                       
+                       
+                           
+                            {% comment %} <div class="weight"> {% endcomment %}
+  
+                            {% comment %} <p>
+                                Camembert/Brie:
+                            </p>
+                            <p>
+                                <a href="files/assortiment_brie_camembert_altipro.pdf" target="_blank">
+                                    Скачать презентацию
+                                </a>
+                            </p>
+                            <p>
+                                <a href="sitemap/index.html">
+                                    Карта сайта
+                                </a>
+                            </p> {% endcomment %}
 
-                    </div>
-                    <div class="col-md-2 col-sm-4 contacts second">
+                        {% comment %} </div>
+                        <div class="col-md-2 col-sm-4 contacts second"> {% endcomment %}
 
 
-                    </div>
-                </div>
-                <div class="row footer-row-second">
-                    <div class="col-md-2 col-md-offset-2  col-sm-4">
-                        <div class="copyright">
-                            © <span>PandaProduct</span> 2019
                         </div>
                     </div>
-                    <div class="col-md-5  col-sm-4">
-                        {% comment %} <div class="footer-logo">
-                            <img src="images/logo-2.png" alt="" />
-                        </div> {% endcomment %}
-                    </div>
-                    <div class="col-md-3  col-sm-4">
-                        <style>
-                            .sy-logo {
-                                font-family: arial, sans-serif;
-                                color: #c5c6c9;
-                                margin-top: -8px;
-                            }
+                    <div class="row footer-row-second">
+                        <div class="col-md-8 col-md-offset-0  col-sm-4">
+                                                 {% comment %} <img align="top" src="https://media.tenor.com/images/37e9e71c2ef4009c6bc1026253b42c3f/tenor.gif" width="200" height="150"   alt="альтернативный текст"> {% endcomment %}
 
-                            .sy-logo span {
-                                font-size: 11px;
-                                display: inline-block;
-                                vertical-align: middle;
-                                margin: 4px 0;
-                            }
-
-                            .sy-logo i {
-                                font-size: 43px;
-                                font-style: normal;
-                                width: 28px;
-                                vertical-align: middle;
-                                display: inline-block;
-                            }
-
-                            .sy-logo b {
-                                display: inline-block;
-                                font-family: inherit;
-                                font-weight: bold;
-                            }
-
-                            .sy-2 {
-                                line-height: .7;
-                            }
-
-                            .sy-logo .sy-3 {
-                                text-align: left;
-                            }
-
-                            .sy-logo .sy-2-1 {
-                                position: relative;
-                                left: 6px;
-                            }
-
-                            .sy-logo .sy-2-2 {
-                                position: relative;
-                                left: -6px;
-                            }
-                        </style>
+                            <div class="copyright">
+                            
+                                © <span>PandaProduct</span>2019
+                            </div>
+                        {% comment %} </div>
+                        <div class="col-md-5  col-sm-4"> {% endcomment %}
+                            {% comment %} <div class="footer-logo">
+                                <img src="images/logo-2.png" alt="" />
+                            </div> {% endcomment %}
+                      
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </footer>
+        </footer>
 
-    {# Global javascript #}
-    {% comment %} <script type="text/javascript" src="{% static 'js/panda.js' %}"></script> {% endcomment %}
-    <script src="{% static 'js/jquery-1.9.1.min.js' %}"></script>
-    <script src="{% static 'js/jquery-migrate-1.4.1.js' %}"></script>
-    <!--<script src="/js/jquery.mask.js"></script>-->
-    <script src="{% static 'js/owl.carousel.js' %}"></script>
-    <script src="{% static 'js/wow.js' %}"></script>
-    <script src="{% static 'js/common.js' %}"></script>
-    {% block extra_js %}
-    {# Override this in templates to add extra javascript #}
-    {% endblock %}
+        {# Global javascript #}
+        {% comment %} <script type="text/javascript" src="{% static 'js/panda.js' %}"></script> {% endcomment %}
+        <script src="{% static 'js/jquery-1.9.1.min.js' %}"></script>
+        <script src="{% static 'js/jquery-migrate-1.4.1.js' %}"></script>
+        <!--<script src="/js/jquery.mask.js"></script>-->
+        <script src="{% static 'js/owl.carousel.js' %}"></script>
+        <script src="{% static 'js/wow.js' %}"></script>
+        <script src="{% static 'js/common.js' %}"></script>
+        <script src="{% static 'js/index.js' %}"></script>
+        {% block extra_js %}
+        {# Override this in templates to add extra javascript #}
+        {% endblock %}
 </body>
+
 </html>
