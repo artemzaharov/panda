@@ -79,7 +79,7 @@ h2,
 h3,
 h4,
 h5 {
-    margin: 0;
+    margin: 2px;
     padding: 0;
     list-style: none;
 }
@@ -132,7 +132,7 @@ a:hover {
 }
 
 body {
-    background: #ebdaca;
+    background: #ffffff;
     color: #000;
     line-height: 1.4;
     font-size: 18px;
@@ -145,11 +145,11 @@ body {
 }
 .top-section-detail-inner
 {
-    background: #ebdaca;
+    background: #ffffff;
 }
 .top-section-detail
 {
-    background: #ebdaca;
+    background: #ffffff;
 }
 .container-fluid
 {
@@ -656,7 +656,7 @@ footer .contacts.second h2
     height: 19px;
 }
 .footer-wrap {
-    border-top: 0px solid #1d1d1f;
+    border-top: 1px solid #555557;
     padding-top: 15px;
     padding-bottom: 5px;
     background-color:white;
@@ -674,6 +674,8 @@ footer .copyright {
     font-family: plumb;
     color: #114116;
     position: relative;
+    top: -5px;
+    left: -5px;
 }
 
 footer .copyright span {
@@ -730,7 +732,7 @@ footer .copyright span {
 
 .top-detail {
     height: 10px;
-    background: #ebdaca;
+    background: #ffffff;
     position: relative;
 }
 .top-detail .blue-box
@@ -772,7 +774,7 @@ h1 {
 
 .content-detail {
     min-height: 400px;
-    background: #ebdaca;
+    background: #ffffff;
     position: relative;
     padding-bottom: 40px;
     overflow: hidden;
@@ -1021,7 +1023,7 @@ h1 {
 }
 .detail-inner-about {
     border-top: 2px solid #000000;
-    background: #ebdaca;
+    background: #ffffff;
     position: relative;
     color: #000000;
     margin: 30px 0;
@@ -1067,7 +1069,7 @@ h1 {
 }
 
 .detail-all-wrap {
-    background: #ebdaca;
+    background: #ffffff;
     font-size: 18px;
     
     margin: 0 0 60px;
@@ -1332,7 +1334,7 @@ ul.prod_ul { margin: 5px 0 25px 30px; }
  }
  .description-wrap
  {
-    background: #ebdaca;
+    background: #ffffff;
     padding-bottom: 240px;
  }
  .head-wrap
@@ -1796,12 +1798,13 @@ textarea::placeholder {}
     border-color: red !important;
 }
 
+
 .feedback-btn {
     position: fixed;
     bottom: 0;
     right: 10%;
     color: #FFF;
-    background: rgba(16, 16, 17, 0.9);
+    background: rgba(58, 211, 31, 0.9);
     padding: 5px 20px;
     cursor: pointer;
     z-index: 5;

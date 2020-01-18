@@ -39,6 +39,12 @@
     <link href="{% static 'css/owl.theme.default.css' %}" type="text/css" rel="stylesheet">
     <link href="{% static 'css/animate.css' %}" type="text/css" rel="stylesheet">
     <link href="{% static 'css/response.css' %}" type="text/css" rel="stylesheet">
+    <style>
+   .rightpic {
+    float: left; /* Выравнивание по правому краю */
+    margin: 0 0 5px 5px; /* Отступы вокруг фотографии */
+   }
+  </style>
  
     {% block extra_css %}
     {% comment %}
@@ -122,7 +128,7 @@
 
 
     <div class="feedback-btn element-btn" data-showEl="1">
-        Заявка на поставку продукции
+        Запросить прайс
     </div>
     <div class="popup-wrap element-show" data-showEl="1">
         <div class="table-row">
@@ -167,16 +173,15 @@
    
    
   
-    {% comment %} <div class="paraxify-brie">#всталяем где нужен футер!!!!!!!!!!!!!!!!! {% endcomment %}
+
         <footer>
             <div class="footer-wrap">
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col-md-2 col-md-offset-0 col-sm-4">
-
-                            <nav>
-                                {% comment %} <p class="footer_head">Меню</p> {% endcomment %}
-                                <img align="top" src="https://media.tenor.com/images/37e9e71c2ef4009c6bc1026253b42c3f/tenor.gif" width="200" height="150"   alt="альтернативный текст"
+                        
+                               
+                <img align="top" src="https://media.tenor.com/images/37e9e71c2ef4009c6bc1026253b42c3f/tenor.gif" width="200" height="220"   alt="альтернативный текст"
                                
                             </nav>
                         </div>
@@ -185,53 +190,34 @@
                          </br>
                            <p>
                                 <a href="/documents/1/.pdf" target="_blank">
-                                <img align="bottom" src="https://msksmol.ru/siemens/img/pdf.png" width="90" height="90"   alt="альтернативный текст">
-                                    Скачать Каталог
-
+                                
+                                    Скачать Каталог:
+                                    </br>
+                        <img align="bottom" src="{% static 'images/panda222.jpg' %}" width="160" height="220" class="rightpic"  alt="альтернативный текст">
                                 </a>
                        
                        
-                           
-                            {% comment %} <div class="weight"> {% endcomment %}
-  
-                            {% comment %} <p>
-                                Camembert/Brie:
-                            </p>
-                            <p>
-                                <a href="files/assortiment_brie_camembert_altipro.pdf" target="_blank">
-                                    Скачать презентацию
-                                </a>
-                            </p>
-                            <p>
-                                <a href="sitemap/index.html">
-                                    Карта сайта
-                                </a>
-                            </p> {% endcomment %}
-
-                        {% comment %} </div>
-                        <div class="col-md-2 col-sm-4 contacts second"> {% endcomment %}
-
-
+                        
                         </div>
                     </div>
                     <div class="row footer-row-second">
-                        <div class="col-md-8 col-md-offset-0  col-sm-4">
-                                                 {% comment %} <img align="top" src="https://media.tenor.com/images/37e9e71c2ef4009c6bc1026253b42c3f/tenor.gif" width="200" height="150"   alt="альтернативный текст"> {% endcomment %}
+                 
+                        
+                        <div class="col-md-6 col-md-offset-0  col-sm-2">
 
                             <div class="copyright">
-                            
+                                     <a href="tel:+78002349097">+7 (800) 234-90-97</a>
+                                     </br>
                                 © <span>PandaProduct</span>2019
+                                                
                             </div>
-                        {% comment %} </div>
-                        <div class="col-md-5  col-sm-4"> {% endcomment %}
-                            {% comment %} <div class="footer-logo">
-                                <img src="images/logo-2.png" alt="" />
-                            </div> {% endcomment %}
+                        
                       
                         </div>
                     </div>
                 </div>
             </div>
+            
         </footer>
 
         {# Global javascript #}
