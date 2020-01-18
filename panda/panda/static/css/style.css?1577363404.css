@@ -682,10 +682,10 @@ footer .copyright span {
     font-family: plumbbold;
 }
 
-.footer-row-second {
+/* .footer-row-second {
     margin-top: 30px;
     padding-bottom: 10px;
-}
+} */
 
 
 /*----footer-----*/
@@ -1022,13 +1022,13 @@ h1 {
     transform: translateX(0px);
 }
 .detail-inner-about {
-    border-top: 2px solid #000000;
+    border-top: 0px solid #000000;
     background: #ffffff;
     position: relative;
     color: #000000;
     margin: 30px 0;
     padding: 0 0 30px;
-    border-bottom: 2px solid #000000;
+    border-bottom: 0px solid #000000;
 }
 
 .detail-inner-about h2 {
@@ -1802,9 +1802,9 @@ textarea::placeholder {}
 .feedback-btn {
     position: fixed;
     bottom: 0;
-    right: 10%;
+    right: 7%;
     color: #FFF;
-    background: rgba(58, 211, 31, 0.9);
+    background: rgba(50, 168, 29, 0.9);
     padding: 5px 20px;
     cursor: pointer;
     z-index: 5;

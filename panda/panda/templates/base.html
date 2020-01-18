@@ -44,15 +44,7 @@
     float: left; /* Выравнивание по правому краю */
     margin: 0 0 5px 5px; /* Отступы вокруг фотографии */
    }
-  </style>
- 
-    {% block extra_css %}
-    {% comment %}
-    <link href="{% static 'css/style.css%3F1577363408.css' %}" type="text/css" rel="stylesheet"> {% endcomment %}
-    {% endblock %}
-</head>
-<style>
-    header {
+   header {
         margin-top: 0 !important;
     }
 
@@ -69,8 +61,15 @@
 
     .description-wrap {
         padding-bottom: 50px;
-    }
-</style>
+
+
+  </style>
+ 
+    {% block extra_css %}
+    {% comment %}
+    <link href="{% static 'css/style.css%3F1577363408.css' %}" type="text/css" rel="stylesheet"> {% endcomment %}
+    {% endblock %}
+</head>
 
 <body class="{% block body_class %}{% endblock %}">
     {% wagtailuserbar %}
@@ -169,9 +168,9 @@
     </div>
 
     {% block content %}{% endblock %}
-   
-   
-   
+   <div id="foot">
+   <div id="wrap">
+
   
 
         <footer>
@@ -181,7 +180,7 @@
                         <div class="col-md-2 col-md-offset-0 col-sm-4">
                         
                                
-                <img align="top" src="https://media.tenor.com/images/37e9e71c2ef4009c6bc1026253b42c3f/tenor.gif" width="200" height="220"   alt="альтернативный текст"
+                <img align="top" src="https://media.tenor.com/images/37e9e71c2ef4009c6bc1026253b42c3f/tenor.gif" width="200" height="200"   alt="альтернативный текст"
                                
                             </nav>
                         </div>
@@ -191,12 +190,14 @@
                            <p>
                                 <a href="/documents/1/.pdf" target="_blank">
                                 
+                                
                                     Скачать Каталог:
                                     </br>
                         <img align="bottom" src="{% static 'images/panda222.jpg' %}" width="160" height="220" class="rightpic"  alt="альтернативный текст">
                                 </a>
                        
-                       
+               
+
                         
                         </div>
                     </div>
@@ -208,7 +209,9 @@
                             <div class="copyright">
                                      <a href="tel:+78002349097">+7 (800) 234-90-97</a>
                                      </br>
-                                © <span>PandaProduct</span>2019
+                                © <span>PandaProduct</span>
+                                
+
                                                 
                             </div>
                         
@@ -217,7 +220,7 @@
                     </div>
                 </div>
             </div>
-            
+             
         </footer>
 
         {# Global javascript #}

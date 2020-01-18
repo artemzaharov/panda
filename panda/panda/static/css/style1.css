@@ -27,3 +27,26 @@
     color: #454e4a;
   }
 }
+
+/*______________________________слайдер_______________________________*/
+
+
+.body_slides{
+  list-style:none;
+  margin:0;
+  padding:0;
+  z-index:10; 
+  background:#000;}
+.body_slides,
+.body_slides:after{
+  position: absolute;
+  bottom: 15px;
+  width:900px;
+  height:20px;
+  top:105%;
+  left:32%;}
+.body_slides:after { 
+  content: '';
+  background: transparent url(images/pattern.png) repeat top left;}
+
+
