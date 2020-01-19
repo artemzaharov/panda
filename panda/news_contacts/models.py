@@ -25,5 +25,5 @@ class NewsContacts(Page):
     ]
 
     class Meta:  #noqa
-        verbose_name = "Контакты , о компании"
-        verbose_name_plural = 'Контакты , о компании'
+        verbose_name = "Контакты"
+        verbose_name_plural = 'Контакты'

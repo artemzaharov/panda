@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+{% load wagtailcore_tags wagtailimages_tags %}
+{% load static %}
+
+{% block content %}
+ 
+ 
+ <section class="section-info">
+                <div class="container-fluid">
+                    <div class="row">
+                
+                        <div class="col-md-5 col-md-offset-2">
+						    <a name="gold_medal"></a>
+                            </br>
+                            </br>
+                            <div class="wrapper">
+                            </br>
+                            </br>
+                            </br>
+                            <h2> {{ self.subtitle }}</h2>
+							{% comment %} <h1 style="font-size: 6px;color:#fff"></h1> {% endcomment %}
+                            {% comment %} {{ self.company_info|richtext }} {% endcomment %}
+                            <p class="text">Мы способны удовлетворить потребности клиентов любого уровня!
+В нашем Прайс-листе только лучшие товары хорошо зарекомендовавших себя
+на рынке производителей и торговых марок.Мы способны удовлетворить потребности клиентов любого уровня!
+В нашем Прайс-листе только лучшие товары хорошо зарекомендовавших себя
+на рынке производителей и торговых марок.
+</p>
+
+</div>
+                        </div>
+                    </div>
+                </div>
+                
+   
+            </section>
+
+{% comment %} <div class="paraxify-brie"> {% endcomment %}
+    {% endblock %}
+
+

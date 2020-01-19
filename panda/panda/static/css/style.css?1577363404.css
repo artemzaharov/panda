@@ -79,7 +79,7 @@ h2,
 h3,
 h4,
 h5 {
-    margin: 2px;
+    margin: 0px;
     padding: 0;
     list-style: none;
 }
@@ -446,7 +446,17 @@ nav a {
     position: relative;
     overflow: hidden;
 }
-
+.section-info {
+    height: 60vh;
+    min-height: 500px;
+    /* background-color: #ffffff; */
+    background: url(../images/pandadd.jpg) center bottom no-repeat;
+    background-size: width="50" height="50";
+    background-attachment: fixed;
+    background-position: right 0px;
+    position: relative;
+    overflow: hidden;
+}
 .blue-box {
     min-height: 200px;
     position: relative;
