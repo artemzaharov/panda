@@ -31,6 +31,7 @@ INSTALLED_APPS = [
     'genericpage',
     'news_contacts',
     'basicpage',
+    'contact',
 
     'wagtail.contrib.forms',
     'wagtail.contrib.redirects',

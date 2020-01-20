@@ -70,9 +70,8 @@ html {
 body,
 html,
 p,
-ul,
-li,
 td,
+ul,
 th,
 h1,
 h2,
@@ -83,7 +82,10 @@ h5 {
     padding: 0;
     list-style: none;
 }
-
+li{
+    margin: 4px; 
+    padding: 4px;
+}
 b,
 strong,
 h1,
@@ -442,18 +444,18 @@ nav a {
     background: url(../images/assorty.jpg) center bottom no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    background-position: center 0px;
+    background-position: center 20px;
     position: relative;
     overflow: hidden;
 }
 .section-info {
     height: 60vh;
-    min-height: 500px;
+    min-height: 600px;
     /* background-color: #ffffff; */
     background: url(../images/pandadd.jpg) center bottom no-repeat;
     background-size: width="50" height="50";
     background-attachment: fixed;
-    background-position: right 0px;
+    background-position: right 3px;
     position: relative;
     overflow: hidden;
 }
@@ -776,7 +778,7 @@ footer .copyright span {
 }
 
 h1 {
-    font-size: 100px;
+    font-size: 40px;
     font-family: gelato;
     color: #000000;
     margin: 70px 20px -15px -30px;

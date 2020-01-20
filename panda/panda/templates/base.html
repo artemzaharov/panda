@@ -39,6 +39,7 @@
     <link href="{% static 'css/owl.theme.default.css' %}" type="text/css" rel="stylesheet">
     <link href="{% static 'css/animate.css' %}" type="text/css" rel="stylesheet">
     <link href="{% static 'css/response.css' %}" type="text/css" rel="stylesheet">
+    <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
     <style>
    .rightpic {
     float: left; /* Выравнивание по правому краю */
@@ -125,8 +126,8 @@
         </div>
     </header>
 
-
-    <div class="feedback-btn element-btn" data-showEl="1">
+<a href="{% slugurl 'pricelist' %}" class="feedback-btn">Запросить прайс</a>
+    {% comment %} <div class="feedback-btn element-btn" data-showEl="1">
         Запросить прайс
     </div>
     <div class="popup-wrap element-show" data-showEl="1">
@@ -165,7 +166,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> {% endcomment %}
 
     {% block content %}{% endblock %}
    <div id="foot">

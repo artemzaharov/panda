@@ -9,6 +9,8 @@
           </br>
             </br>
             <h1>{{ self.name }}</h1>
+              </br>
+          </br>
         </div>
     </div>
     <div class="row">
@@ -17,8 +19,11 @@
                 {% comment %} <h2>{{ self.package }}</h2> {% endcomment %}
                 {% comment %} </br> {% endcomment %}
                 <p>{{ self.info }}</p>
+                
             </div>
         </div>
+         </br>
+          </br>
         {% for block in page.content %}
         {% include_block block %}
         {% endfor %}
