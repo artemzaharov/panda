@@ -1,67 +1,69 @@
 {% extends 'base.html' %}
 {% load wagtailcore_tags wagtailimages_tags %}
-   
+
 {% block content %}
-          <section class="section-1"> 
-                <div class="container-fluid">
-                    <div class="row">
-                        <div class="col-md-4 col-sm-12 col-xs-12">
-                            <div class="top-wrap top-wrap-1">
-                                <div class="top-img top-img-1">
-                                    <a class="link-head" href="{% slugurl 'fish' %}">
-                                        <span>Рыба</span>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-sm-12 col-xs-12">
-                            <div class="top-wrap top-wrap-2">
-                                {% comment %} <img class="main-logo" src="images/main-logo.png" alt=""> {% endcomment %}
-                                <div class="top-img top-img-2">
-                                    <a class="link-head" href="{% slugurl 'cheese' %}">
-                                        <span>Сыр</span>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-sm-12 col-xs-12">
-                            <div class="top-wrap top-wrap-3">
-                                <div class="top-img top-img-3">
-                                    <a class="link-head" href="{% slugurl 'meat' %}.html">
-                                        <span>Мясо</span>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
+<section class="section-1">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-4 col-sm-12 col-xs-12">
+                <div class="top-wrap top-wrap-1">
+                    <div class="top-img top-img-1">
+                        
+                        <a class='link-head' href="{% slugurl 'fish' %}">
+                          <span> Рыба </span>   
+                        </a>
+                      
                     </div>
                 </div>
-            </section>
-            <section class="section-2">
-                <div class="container-fluid">
-                    <div class="row">
-                
-                        <div class="col-md-4 col-md-offset-5">
-						    <a name="gold_medal"></a>
-                            </br>
-                            </br>
-                            <div class="wrapper">
-                            </br>
-                            </br>
-                            </br>
-							{% comment %} <h1 style="font-size: 6px;color:#fff"></h1> {% endcomment %}
-                            {% comment %} {{ self.company_info|richtext }} {% endcomment %}
-                            <p class="text">Мы способны удовлетворить потребности клиентов любого уровня!
-В нашем Прайс-листе только лучшие товары хорошо зарекомендовавших себя
-на рынке производителей и торговых марок.
-</p>
-</div>
-                        </div>
+            </div>
+            <div class="col-md-4 col-sm-12 col-xs-12">
+                <div class="top-wrap top-wrap-2">
+                    {% comment %} <img class="main-logo" src="images/main-logo.png" alt=""> {% endcomment %}
+                    <div class="top-img top-img-2">
+                        <a class="link-head" href="{% slugurl 'cheese' %}">
+                            <span>Сыр</span>
+                        </a>
                     </div>
                 </div>
-                
-   
-            </section>
-      
+            </div>
+            <div class="col-md-4 col-sm-12 col-xs-12">
+                <div class="top-wrap top-wrap-3">
+                    <div class="top-img top-img-3">
+                        <a class="link-head" href="{% slugurl 'meat' %}.html">
+                            <span>Мясо</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="section-2">
+    <div class="container-fluid">
+        <div class="row">
+
+            <div class="col-md-4 col-md-offset-5">
+                <a name="gold_medal"></a>
+                </br>
+                </br>
+                <div class="wrapper">
+                    </br>
+                    </br>
+                    </br>
+                    {% comment %} <h1 style="font-size: 6px;color:#fff"></h1> {% endcomment %}
+                    {% comment %} {{ self.company_info|richtext }} {% endcomment %}
+                    <p class="text">Мы способны удовлетворить потребности клиентов любого уровня!
+                        В нашем Прайс-листе только лучшие товары хорошо зарекомендовавших себя
+                        на рынке производителей и торговых марок.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</section>
+
 
 
 
@@ -69,4 +71,3 @@
 
 
 {% endblock %}
-
