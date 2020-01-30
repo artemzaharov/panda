@@ -34,38 +34,40 @@
     <link rel="SHORTCUT ICON" href="favicon.ico">
     <link href="{% static 'css/bootstrap.css' %}" type="text/css" rel="stylesheet">
     <link href="{% static 'css/style.css%3F1577363404.css' %}" type="text/css" rel="stylesheet">
-     <link href="{% static 'css/style1.css' %}" type="text/css" rel="stylesheet">
+    <link href="{% static 'css/style1.css' %}" type="text/css" rel="stylesheet">
     <link href="{% static 'css/owl.carousel.css' %}" type="text/css" rel="stylesheet">
     <link href="{% static 'css/owl.theme.default.css' %}" type="text/css" rel="stylesheet">
     <link href="{% static 'css/animate.css' %}" type="text/css" rel="stylesheet">
     <link href="{% static 'css/response.css' %}" type="text/css" rel="stylesheet">
-    <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+    <link rel='stylesheet prefetch'
+        href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
     <style>
-   .rightpic {
-    float: left; /* Выравнивание по правому краю */
-    margin: 0 0 5px 5px; /* Отступы вокруг фотографии */
-   }
-   header {
-        margin-top: 0 !important;
-    }
+        .rightpic {
+            float: left;
+            /* Выравнивание по правому краю */
+            margin: 0 0 5px 5px;
+            /* Отступы вокруг фотографии */
+        }
 
-    header a {
-        visibility: visible !important;
-        opacity: 1 !important;
-    }
+        header {
+            margin-top: 0 !important;
+        }
 
-    .detail-inner {
-        padding-bottom: 0px;
-        margin-bottom: 0px;
-        margin-top: -50px;
-    }
+        header a {
+            visibility: visible !important;
+            opacity: 1 !important;
+        }
 
-    .description-wrap {
-        padding-bottom: 50px;
+        .detail-inner {
+            padding-bottom: 0px;
+            margin-bottom: 0px;
+            margin-top: -50px;
+        }
 
+        .description-wrap {
+            padding-bottom: 50px;
+    </style>
 
-  </style>
- 
     {% block extra_css %}
     {% comment %}
     <link href="{% static 'css/style.css%3F1577363408.css' %}" type="text/css" rel="stylesheet"> {% endcomment %}
@@ -79,9 +81,12 @@
         <div class="close"></div>
         <ul>
             <li><a href="/">Главная</a></li>
+            <li><a href="{% slugurl 'meat' %}">Аппетайзеры</a></li>
+            <li><a href="{% slugurl 'meat' %}">Топпинги</a></li>
+            <li><a href="{% slugurl 'meat' %}">Морсы</a></li>
             <li><a href="{% slugurl 'fish' %}">Рыба</a></li>
-            <li><a href="{% slugurl 'cheese' %}">Сыр</a></li>
             <li><a href="{% slugurl 'meat' %}">Мясо</a></li>
+            <li><a href="{% slugurl 'cheese' %}">Сыр</a></li>
             <li><a href="/documents/1/.pdf">Скачать Каталог</a></li>
             <li><a href="/documents/1/.pdf">Скачать Каталог</a></li>
         </ul>
@@ -104,9 +109,12 @@
                         <li><a href="{% slugurl 'about' %}">О компании</a></li>
                         <li><a style="cursor: default;">Продукция</a>
                             <ul>
+                                <li><a href="{% slugurl 'meat' %}">Аппетайзеры</a></li>
+                                <li><a href="{% slugurl 'meat' %}">Топпинги</a></li>
+                                <li><a href="{% slugurl 'meat' %}">Морсы</a></li>
                                 <li><a href="{% slugurl 'fish' %}">Рыба</a></li>
-                                <li><a href="{% slugurl 'cheese' %}">Сыр</a></li>
                                 <li><a href="{% slugurl 'meat' %}">Мясо</a></li>
+                                <li><a href="{% slugurl 'cheese' %}">Сыр</a></li>
                             </ul>
 
                         </li>
@@ -126,7 +134,7 @@
         </div>
     </header>
 
-<a href="{% slugurl 'pricelist' %}" class="feedback-btn">Запросить прайс</a>
+    <a href="{% slugurl 'pricelist' %}" class="feedback-btn">Запросить прайс</a>
     {% comment %} <div class="feedback-btn element-btn" data-showEl="1">
         Запросить прайс
     </div>
@@ -169,73 +177,71 @@
     </div> {% endcomment %}
 
     {% block content %}{% endblock %}
-   <div id="foot">
-   <div id="wrap">
+    <div id="foot">
+        <div id="wrap">
 
-  
 
-        <footer>
-            <div class="footer-wrap">
-                <div class="container-fluid">
-                    <div class="row">
-                        <div class="col-md-2 col-md-offset-0 col-sm-4">
-                        
-                               
-                <img align="top" src="{% static 'images/pandalast.gif' %}" width="150" height="260"   alt="альтернативный текст"
-                               
-                            </nav>
-                        </div>
-                        <div class="col-md-push-8 col-sm-1 contacts">
-                        </br>
-                         </br>
-                           <p>
-                                <a href="/documents/1/.pdf" target="_blank">
-                                
-                                
-                                    Скачать Каталог:
-                                    </br>
-                        <img align="bottom" src="{% static 'images/panda222.jpg' %}" width="160" height="220" class="rightpic"  alt="альтернативный текст">
-                                </a>
-                       
-               
 
-                        
-                        </div>
-                    </div>
-                    <div class="row footer-row-second">
-                 
-                        
-                        <div class="col-md-6 col-md-offset-0  col-sm-2">
+            <footer>
+                <div class="footer-wrap">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-2 col-md-offset-0 col-sm-4">
 
-                            <div class="copyright">
-                                     <a href="tel:+78002349097">+7 (800) 234-90-97</a>
-                                     </br>
-                                © <span>PandaProduct</span>
-                                
 
-                                                
+                                <img align="top" src="{% static 'images/pandalast.gif' %}" alt="альтернативный текст"> </nav> </div> <div
+                                    class="col-md-push-8 col-sm-1 contacts">
+                                </br>
+                                </br>
+                                <p>
+                                    <a href="/documents/1/.pdf" target="_blank">
+
+
+                                        Скачать Каталог:
+                                        </br>
+                                        <img align="bottom" src="{% static 'images/panda222.jpg' %}" width="160"
+                                            height="220" class="rightpic" alt="альтернативный текст">
+                                    </a>
+
+
+
+
                             </div>
-                        
-                      
+                        </div>
+                        <div class="row footer-row-second">
+
+
+                            <div class="col-md-6 col-md-offset-0  col-sm-2">
+
+                                <div class="copyright">
+                                    <a href="tel:+78002349097">+7 (800) 234-90-97</a>
+                                    </br>
+                                    © <span>PandaProduct</span>
+
+
+
+                                </div>
+
+
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-             
-        </footer>
 
-        {# Global javascript #}
-        {% comment %} <script type="text/javascript" src="{% static 'js/panda.js' %}"></script> {% endcomment %}
-        <script src="{% static 'js/jquery-1.9.1.min.js' %}"></script>
-        <script src="{% static 'js/jquery-migrate-1.4.1.js' %}"></script>
-        <!--<script src="/js/jquery.mask.js"></script>-->
-        <script src="{% static 'js/owl.carousel.js' %}"></script>
-        <script src="{% static 'js/wow.js' %}"></script>
-        <script src="{% static 'js/common.js' %}"></script>
-        <script src="{% static 'js/index.js' %}"></script>
-        {% block extra_js %}
-        {# Override this in templates to add extra javascript #}
-        {% endblock %}
+            </footer>
+
+            {# Global javascript #}
+            {% comment %} <script type="text/javascript" src="{% static 'js/panda.js' %}"></script> {% endcomment %}
+            <script src="{% static 'js/jquery-1.9.1.min.js' %}"></script>
+            <script src="{% static 'js/jquery-migrate-1.4.1.js' %}"></script>
+            <!--<script src="/js/jquery.mask.js"></script>-->
+            <script src="{% static 'js/owl.carousel.js' %}"></script>
+            <script src="{% static 'js/wow.js' %}"></script>
+            <script src="{% static 'js/common.js' %}"></script>
+            <script src="{% static 'js/index.js' %}"></script>
+            {% block extra_js %}
+            {# Override this in templates to add extra javascript #}
+            {% endblock %}
 </body>
 
 </html>

@@ -18,12 +18,16 @@
             <h1>{{ self.subtitle}}</h1>
         </div>
     </div>
-    <div class="row">
         <div class="col-md-7 col-md-offset-3">
             <div class="content-description">
                 <p>
                     {{ self.info }}
                 </p>
+                 <img align="top" src="{{ self.gifurl }}" width="260"
+                                            height="260" alt="альтернативный текст">
+                  {% comment %} <img align="top" src="{% static 'images/pandalast.gif' %}" alt="альтернативный текст"> {% endcomment %}
+                 
+    <div class="row">
             </div>
         </div>
     </div>
