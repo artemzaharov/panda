@@ -10,13 +10,30 @@
                 <div class="top-section-detail show">
                     <div class="wrap-mini">
                         <h1>{{ self.subtitle }}</h1>
+                        <br>
                         <div class="description-wrap">
                             <div class="description">
-                                <p>{{ self.info }}</p>
+                               <h3> Адрес : </h3>
+<P>Москва , рязанский проспект дом 22 к 2 </p>
+<h3> Телефон : </h3>
+<tel>+7 495 208 54 77</tel>
+<h2>Для поставщиков</h2>
+<h3> Телефон : </h3>
+<tel>+7 915 466 10 98</tel>
+<h3> Почта : </h3>
+ <p>info@pandaproduct.ru<p>
+                                {% comment %} <p>{{ self.info }}</p>
                                 <p>{{ self.mail }}</p>
-                                <p>{{ self.adress }}</p>
+                                <p>{{ self.adress }}</p> {% endcomment %}
                                 <iframe src="https://yandex.ru/map-widget/v1/-/CKAyeZJB" width="100%%" height="400" frameborder="1" allowfullscreen="true"></iframe>
                                 <br>
+                                  <br>
+                                <img align="bottom" src="{% static 'images/facebook.svg' %}" width="60"
+                                            height="60" class="rightpic" alt="альтернативный текст">
+                                                   <img align="bottom" src="{% static 'images/instagram.svg' %}" width="60"
+                                            height="60" class="rightpic" alt="альтернативный текст">
+                                              <img align="bottom" src="{% static 'images/whatsapp.svg' %}" width="60"
+                                            height="60" class="rightpic" alt="альтернативный текст">
                                 <br>
                                 <br>
                                 <br>
@@ -25,6 +42,8 @@
                                 <br>
                                 <br>
                                 <br>
+                                <br>
+
                             </div>
                         </div>
                     </div>

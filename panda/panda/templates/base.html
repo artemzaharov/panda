@@ -66,6 +66,9 @@
 
         .description-wrap {
             padding-bottom: 50px;
+        .fig {
+    text-align: center; /* Выравнивание по центру */ 
+        }
     </style>
 
     {% block extra_css %}
@@ -81,9 +84,9 @@
         <div class="close"></div>
         <ul>
             <li><a href="/">Главная</a></li>
-            <li><a href="{% slugurl 'meat' %}">Аппетайзеры</a></li>
-            <li><a href="{% slugurl 'meat' %}">Топпинги</a></li>
-            <li><a href="{% slugurl 'meat' %}">Морсы</a></li>
+            <li><a href="{% slugurl 'aperaizer' %}">Аппетайзеры</a></li>
+            <li><a href="{% slugurl 'aperaizer' %}">Топпинги</a></li>
+            <li><a href="{% slugurl 'aperaizer' %}">Морсы</a></li>
             <li><a href="{% slugurl 'fish' %}">Рыба</a></li>
             <li><a href="{% slugurl 'meat' %}">Мясо</a></li>
             <li><a href="{% slugurl 'cheese' %}">Сыр</a></li>
@@ -109,9 +112,9 @@
                         <li><a href="{% slugurl 'about' %}">О компании</a></li>
                         <li><a style="cursor: default;">Продукция</a>
                             <ul>
-                                <li><a href="{% slugurl 'meat' %}">Аппетайзеры</a></li>
-                                <li><a href="{% slugurl 'meat' %}">Топпинги</a></li>
-                                <li><a href="{% slugurl 'meat' %}">Морсы</a></li>
+                                <li><a href="{% slugurl 'aperaizer' %}">Аппетайзеры</a></li>
+                                <li><a href="{% slugurl 'aperaizer' %}">Топпинги</a></li>
+                                <li><a href="{% slugurl 'aperaizer' %}">Морсы</a></li>
                                 <li><a href="{% slugurl 'fish' %}">Рыба</a></li>
                                 <li><a href="{% slugurl 'meat' %}">Мясо</a></li>
                                 <li><a href="{% slugurl 'cheese' %}">Сыр</a></li>
@@ -187,7 +190,6 @@
                     <div class="container-fluid">
                         <div class="row">
                             <div class="col-md-2 col-md-offset-0 col-sm-4">
-
 
                                 <img align="top" src="{% static 'images/pandalast.gif' %}" alt="альтернативный текст"> </nav> </div> <div
                                     class="col-md-push-8 col-sm-1 contacts">
