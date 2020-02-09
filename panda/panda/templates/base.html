@@ -84,8 +84,8 @@
         <div class="close"></div>
         <ul>
             <li><a href="/">Главная</a></li>
-            <li><a href="{% slugurl 'aperaizer' %}">Аппетайзеры</a></li>
-            <li><a href="{% slugurl 'aperaizer' %}">Топпинги</a></li>
+            <li><a href="{% slugurl 'aperaizer' %}">Топпинги(Пицца)</a></li>
+            <li><a href="{% slugurl 'aperaizer' %}">Аппетайзеры</a></li>      
             <li><a href="{% slugurl 'aperaizer' %}">Морсы</a></li>
             <li><a href="{% slugurl 'fish' %}">Рыба</a></li>
             <li><a href="{% slugurl 'meat' %}">Мясо</a></li>
@@ -100,7 +100,7 @@
                 <div class="col-md-2">
                     <div class="header-logo-wrap">
                         <a href="index.html">
-                            <img src="{% static 'images/header-arrow.png' %}" alt="">
+                            <img src="{% static 'images/header-arrow.png' %}" width='140' height='240' alt="">
                         </a>
                     </div>
                 </div>
@@ -112,8 +112,8 @@
                         <li><a href="{% slugurl 'about' %}">О компании</a></li>
                         <li><a style="cursor: default;">Продукция</a>
                             <ul>
+                                <li><a href="{% slugurl 'aperaizer' %}">Топпинги(Пицца)</a></li>
                                 <li><a href="{% slugurl 'aperaizer' %}">Аппетайзеры</a></li>
-                                <li><a href="{% slugurl 'aperaizer' %}">Топпинги</a></li>
                                 <li><a href="{% slugurl 'aperaizer' %}">Морсы</a></li>
                                 <li><a href="{% slugurl 'fish' %}">Рыба</a></li>
                                 <li><a href="{% slugurl 'meat' %}">Мясо</a></li>

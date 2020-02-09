@@ -694,7 +694,7 @@ footer .contacts.second h2
     border-top: 1px solid #555557;
     padding-top: 15px;
     padding-bottom: 5px;
-    background-color:white;
+    background: url(../images/bamboo.jpg);
 }
 
 footer h2 {
@@ -1598,7 +1598,7 @@ textarea {
 }
 
 textarea {
-    resize: inherit;
+    resize: in  herit;
     height: 95px;
 }
 
