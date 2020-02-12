@@ -8,34 +8,34 @@
 <div class="content-detail content-camembert">
     <div class="brie-bg-1"></div>
     {% comment %} <div class="content-detail content-mozzarella">
-                    <div class="mozzarella-bg-1"></div>
-                    <div class="mozzarella-bg-2"></div>
-                    <div class="mozzarella-bg-3 wow fadeIn"></div>
-                    <div class="container-fluid"> {% endcomment %}
-    <div class="brie-bg-2"></div>
-    <div class="row">
-        <div class="col-md-7 col-md-offset-3">
-            <h1>{{ self.subtitle}}</h1>
-        </div>
-    </div>
-        <div class="col-md-7 col-md-offset-3">
-            <div class="content-description">
-            <br>
-                <p>
-                    {{ self.info }}
-                </p>
-                 <img align="top" src="{{ self.gifurl }}" width="260"
-                                            height="260" alt="альтернативный текст">
-                  {% comment %} <img align="top" src="{% static 'images/pandalast.gif' %}" alt="альтернативный текст"> {% endcomment %}
-                 
-    <div class="row">
+        <div class="mozzarella-bg-1"></div>
+        <div class="mozzarella-bg-2"></div>
+        <div class="mozzarella-bg-3 wow fadeIn"></div>
+        <div class="container-fluid"> {% endcomment %}
+            <div class="brie-bg-2"></div>
+            <div class="row">
+                <div class="col-md-7 col-md-offset-3">
+                    <h1>{{ self.subtitle}}</h1>
+                </div>
             </div>
+            <div class="col-md-7 col-md-offset-3">
+                <div class="content-description">
+                    <br>
+                    <p>
+                        {{ self.info }}
+                    </p>
+                    <img align="top" src="{{ self.gifurl }}" width="260" height="260" alt="альтернативный текст">
+                    {% comment %} <img align="top" src="{% static 'images/pandalast.gif' %}" alt="альтернативный текст">
+                    {% endcomment %}
+
+                    <div class="row">
+                    </div>
+                </div>
+            </div>
+            {% for block in page.content %}
+            {% include_block block %}
+            {% endfor %}
         </div>
     </div>
-    {% for block in page.content %}
-    {% include_block block %}
-    {% endfor %}
-</div>
-</div>
-{% comment %} <div class="paraxify-brie"> {% endcomment %}
-    {% endblock %}
+    {% comment %} <div class="paraxify-brie"> {% endcomment %}
+        {% endblock %}

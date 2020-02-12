@@ -7,11 +7,9 @@ $(document).on("ready", function () {
         $("[data-showEl='" + activeIndex + "'].element-show").toggleClass("show");
     });
 
-    $(".nav-extra li").hover(function(){
-       $(this).find("ul").stop().fadeIn(250); 
-    },function(){
-        $(this).find("ul").fadeOut(250);
-    })
+    $(".nav-extra li").click(function(){
+        $(this).find('ul').slideToggle();
+});
 
 
 
@@ -63,7 +61,7 @@ $(document).on("ready", function () {
         mailInput = $(".input-mail").val();
         // console.log(mailInput)
         if (!r.test(mailInput)) {
-            //    console.log("Код, если неверный e-mail");
+            //    console.log("пїЅпїЅпїЅ, пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ e-mail");
             mailFlag = 0;
             /*$(this).css({
             "background-color": "rgba(255, 152, 0, 0.35)"
@@ -129,11 +127,11 @@ $(document).on("ready", function () {
                 }
                 console.log(address);
                 product = $(this).parents(".form").find(".input-product").find("span").text();
-                if (product == "Продукт") {
+                if (product == "пїЅпїЅпїЅпїЅпїЅпїЅпїЅ") {
                     product = "";
                 }
                 type = $(this).parents(".form").find(".input-type").find("span").text();
-                if (type == "Вид") {
+                if (type == "пїЅпїЅпїЅ") {
                     type = "";
                 }
                 weight = $(this).parents(".form").find(".input-weight").val();
@@ -164,11 +162,11 @@ $(document).on("ready", function () {
                     contentType: false, // NEEDED, DON'T OMIT THIS (requires jQuery 1.6+)
                     processData: false,
 
-                    // Выводим то что вернул PHP
+                    // пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ PHP
                     success: function (html) {
-                        //предварительно очищаем нужный элемент страницы
+                        //пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
                         $(".result").empty();
-                        //и выводим ответ php скрипта
+                        //пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ php пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
                         $(".result").append(html);
 						
 						dataLayer.push({'event': 'zayavka'}); ///for GTM

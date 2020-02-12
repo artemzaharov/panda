@@ -1517,7 +1517,7 @@ body header {
     color: #fff;
     font-family: gelato;
 
-    font-size: 18px;
+    font-size: 24px;
     text-align: center;
     font-family: Pt;
 }
@@ -1541,11 +1541,11 @@ header nav li {
 
 .nav-extra {
 
-    margin-top: 8px;
+    margin-top: 2px;
 }
 
 .nav-extra li ul {
-
+    
     position: absolute;
     padding: 0px 0px 0;
     left: 0px;
@@ -1555,7 +1555,7 @@ header nav li {
     border-radius: 0 0 6px 6px;
     overflow: hidden;
     width: auto;
-    left: 67%;
+    left: 61%;
     margin-left: -170px;
     box-shadow: 0 3px 3px rgba(0, 0, 0, 0.12);
     font-size: 0;
@@ -1564,9 +1564,8 @@ header nav li {
     display: inline-block;
     display: none;
 }
-
-.nav-extra li:hover ul {
-
+        
+.nav-extra li:click ul {
 
 }
 
@@ -1576,13 +1575,18 @@ header nav li {
     background: rgb(231, 231, 231,  0.9);
     padding: 5px 10px;
 }
-
+.nav-extra li ul li :hover {
+    color: #2c9638;
+    font-size: 36px;
+    text-decoration: underline;
+}
 header nav li a {
     transition: ease-out 0.25s;
 }
 
 header nav li a:hover {
     color: #24682c;
+    
 }
 
 /*--fields--*/
@@ -1845,7 +1849,7 @@ textarea::placeholder {}
     cursor: pointer;
     z-index: 5;
     font-size: 21px;
-    border-radius: 2px 2px 0 0;
+    border-radius: 10px 10px 0 0;
 }
 
 .custom-select.active ul.type-ul {
