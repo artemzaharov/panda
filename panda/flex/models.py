@@ -13,7 +13,13 @@ class FlexPage(Page):
 
     subtitle = models.CharField(max_length=100, null=True, blank=True)
     info = models.TextField(max_length=1000, null=True, blank=True)
-    gifurl = models.URLField(max_length=100, blank=True)
+    photopanda = models.ForeignKey(
+        "wagtailimages.Image",
+        null=True,
+        blank=True,
+        on_delete=models.SET_NULL,
+        related_name='+',
+    )
     content = StreamField(
         [
             # ("title_and_text", blocks.TitleAndTextBlock()),
@@ -26,7 +32,7 @@ class FlexPage(Page):
     content_panels = Page.content_panels + [
         FieldPanel("subtitle"),
         FieldPanel("info"),
-        FieldPanel("gifurl"),
+        FieldPanel("photopanda"),
         StreamFieldPanel('content'),
     ]
 

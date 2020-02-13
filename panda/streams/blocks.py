@@ -19,6 +19,8 @@ class RichTextBlock(blocks.StructBlock):
 
     
     photo = ImageChooserBlock(required=False)
+    information_right = blocks.RichTextBlock()
+    information_left = blocks.RichTextBlock()
     
     class Meta: #noqa
         template = 'streams/richtext_block.html'

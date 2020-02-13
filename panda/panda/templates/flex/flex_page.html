@@ -24,7 +24,8 @@
                     <p>
                         {{ self.info }}
                     </p>
-                    <img align="top" src="{{ self.gifurl }}" width="260" height="260" alt="альтернативный текст">
+                    {% image page.photopanda original min-500x200 %}
+                    {% comment %} <img align="top" src="{{ self.photopanda }}"> {% endcomment %}
                     {% comment %} <img align="top" src="{% static 'images/pandalast.gif' %}" alt="альтернативный текст">
                     {% endcomment %}
 
