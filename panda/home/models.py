@@ -41,3 +41,12 @@ class HomePage(Page):
         PageChooserPanel('some_link_meat'),
         PageChooserPanel('some_link_cheese'),
     ]
+    def get_context(self, request, *args, **kwargs):
+        context = super(HomePage, self).get_context(request, *args, **kwargs)
+    
+
+        context['menuitems'] = self.get_children().filter(
+            live=True, show_in_menus=True)
+
+        return context
+

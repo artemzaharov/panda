@@ -1,5 +1,6 @@
 {% load static wagtailuserbar %}
 {% load wagtailcore_tags %}
+{% load menu_tags %}
 
 
 <!DOCTYPE html>
@@ -39,6 +40,9 @@
     <link href="{% static 'css/owl.theme.default.css' %}" type="text/css" rel="stylesheet">
     <link href="{% static 'css/animate.css' %}" type="text/css" rel="stylesheet">
     <link href="{% static 'css/response.css' %}" type="text/css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.typekit.net/chx7nci.css">
+
+
     <link rel='stylesheet prefetch'
         href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
     <style>
@@ -110,16 +114,26 @@
 
                     <nav class="nav-extra">
                         <li><a href="/">Главная</a></li>
+                        
                         {% comment %} <li><a href="{{ page.get_parent.url }}">Главная</a></li> {% endcomment %}
                         <li><a href="{% slugurl 'about' %}">О компании</a></li>
                         <li><a class="main-item" style="cursor: default;">Продукция</a>
-                            <ul class="sub-menu">
-                                <li><a href="{% slugurl 'topping' %}">Топпинги для Пиццы</a></li>
+                         {% main_menu %}
+                            {% comment %} <ul class="sub-menu">
+                             {% main_menu %} {% endcomment %}
+                               {% comment %} <li><a href="{% slugurl 'topping' %}">Топпинги для Пиццы</a></li>
                                 <li><a href="{% slugurl 'aperaizer' %}">Аппетайзеры</a></li>
                                 <li><a href="{% slugurl 'morc' %}">Морсы</a></li>
                                 <li><a href="{% slugurl 'fish' %}">Рыба</a></li>
                                 <li><a href="{% slugurl 'meat' %}">Мясо</a></li>
-                                <li><a href="{% slugurl 'cheese' %}">Сыр</a></li>
+                                <li><a href="{% slugurl 'cheese' %}">Сыр</a></li>  {% endcomment %}
+                                                 {% comment %} {% for menu in menuitems %}
+        <li>
+            <a href="{{menu.url}}">{{menu.title}}</a>
+        </li>
+    {% endfor %}
+     {% main_menu template="menus/bootstrap3/main_menu_dropdown.html" %} {% endcomment %}
+       
                             </ul>
 
                         </li>

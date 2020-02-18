@@ -1,4 +1,5 @@
 from django.db import models
+from home.models import *
 from wagtail.core.models import Page
 from wagtail.admin.edit_handlers import FieldPanel, StreamFieldPanel
 from wagtail.images.edit_handlers import ImageChooserPanel
@@ -39,3 +40,12 @@ class FlexPage(Page):
     class Meta:  #noqa
         verbose_name = "Список Tоваров"
         verbose_name_plural = 'Tовары'
+
+    def get_context(self, request, *args, **kwargs):
+        context = super().get_context(request, *args, **kwargs)
+    
+
+        context['menuitems'] = self.get_children().filter(
+            live=True, show_in_menus=True)
+
+        return context

@@ -1515,7 +1515,11 @@ body header {
     background: rgba(255, 255, 255, 0.9);
     height: 70px !important;
     color: #fff;
-    font-family: gelato;
+    font-family: myriad-pro, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+
+
 
     font-size: 24px;
     text-align: center;
@@ -1559,7 +1563,11 @@ header nav li {
     margin-left: -170px;
     box-shadow: 0 3px 3px rgba(0, 0, 0, 0.12);
     font-size: 0;
-    font-family: gelato;
+    font-family: myriad-pro, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+
+
  
     display: inline-block;
     display: none;

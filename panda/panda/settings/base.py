@@ -32,6 +32,8 @@ INSTALLED_APPS = [
     'news_contacts',
     'basicpage',
     'contact',
+    'wagtailmenus',
+    'wagtail.contrib.modeladmin',
 
     'wagtail.contrib.forms',
     'wagtail.contrib.redirects',
@@ -84,6 +86,7 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
+                'wagtailmenus.context_processors.wagtailmenus',
             ],
         },
     },
@@ -125,7 +128,7 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/2.2/topics/i18n/
 
-LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = 'ru-ru'
 
 TIME_ZONE = 'UTC'
 
