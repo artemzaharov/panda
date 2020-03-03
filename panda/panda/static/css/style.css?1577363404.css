@@ -83,7 +83,8 @@ h5 {
 }
 ul,
 li{
-    line-height: 3;
+    
+    line-height: 2;
     margin: 0px; 
     padding: 0px;
 } 
@@ -1101,6 +1102,8 @@ h1 {
 
 .inner-about-wrap {
     display: inline-block;
+    margin: 12px;
+    
 }
 
 .detail-all-wrap {
@@ -1545,7 +1548,7 @@ header nav li {
 
 .nav-extra {
 
-    margin-top: 2px;
+    margin-top: 12px;
 }
 
 .nav-extra li ul {
@@ -1579,17 +1582,21 @@ header nav li {
 
 .nav-extra li ul li {
     display: list-item;
-    font-size: 27px;
+    border : 1px;
+    text-align: left;
+    font-size: 18px;
     background: rgb(231, 231, 231,  0.9);
-    padding: 5px 10px;
+    padding: 0;
+    margin: 0;
 }
 .nav-extra li ul li :hover {
     color: #2c9638;
-    font-size: 36px;
+    font-size: 22px;
     text-decoration: underline;
 }
 header nav li a {
     transition: ease-out 0.25s;
+    
 }
 
 header nav li a:hover {
